@@ -1,0 +1,61 @@
+$mainWhite: #ffffff;
+$mainGreen: rgb(20, 167, 108);
+$mainOrange: #FF652F;
+$mainRed: #E02D05;
+$mainViolet: linear-gradient(326.12deg, #5D77FF 17.95%, #6539C1 89.78%);
+$mainBlack: #1F1D2A;
+$mainGray: #4F5569;
+
+
+@mixin h1-font {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    color: $mainBlack;
+}
+@mixin h2-font {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    color: $mainBlack;
+}
+@mixin subtext {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.08em;
+}
+
+@mixin paragraph-1 {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+}
+@mixin paragraph-2 {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+}
+@mixin navMenutext {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+}
+@mixin timerText {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+}
+
