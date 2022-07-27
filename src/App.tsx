@@ -5,13 +5,21 @@ import TimerPad from "./components/timer/TimerPad";
 import Button from "./components/ui/SolidButton";
 import Checkbox from "./components/ui/Checkbox";
 import PlanStep from "./components/ui/PlanStep";
+import Footer from "./components/Footer";
+import Subscription from "./components/Subscription";
 
 
 function App() {
   return (
-    <main className="App">
-      <Cover />
-    </main>
+    <div className="App">
+      <main>
+        <Cover />
+        <Subscription />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }
 

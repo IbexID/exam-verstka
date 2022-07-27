@@ -1,11 +1,11 @@
 $mainWhite: #ffffff;
-$mainGreen: rgb(20, 167, 108);
+$mainGreen: #14a76c;
 $mainOrange: #FF652F;
 $mainRed: #E02D05;
 $mainViolet: linear-gradient(326.12deg, #5D77FF 17.95%, #6539C1 89.78%);
 $mainBlack: #1f1d2a;
 $mainGray: #4f5569;
-$lightGray: #9FA0A7;
+$lightGray: #9fa0a7;
 
 
 @mixin h1-font {
@@ -79,6 +79,7 @@ $lightGray: #9FA0A7;
     font-size: 22px;
     line-height: 33px;
     letter-spacing: 0.05em;
+    color: $mainGray;
 }
 
 @mixin paragraph-medium {
@@ -87,6 +88,7 @@ $lightGray: #9FA0A7;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.05em;
+    color: $mainGray;
 }
 
 @mixin paragraph-small {
@@ -104,6 +106,12 @@ $lightGray: #9FA0A7;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: 0.03em;
+    color: $mainBlack;
+}
+
+@mixin footer-text{
+    @include navMenutext;
+    font-weight: 400;
 }
 
 @mixin timerPadTime {
@@ -137,6 +145,8 @@ $lightGray: #9FA0A7;
 }
 
 @mixin solid-button {
+    width: 100%;
+    max-width: 360px;
     padding: 18px 75px;
     font-family: 'Rubik';
     font-weight: 700;

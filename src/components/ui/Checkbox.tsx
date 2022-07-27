@@ -7,7 +7,7 @@ interface ICheckboxProps {
 const Checkbox: React.FC<ICheckboxProps> = ({ color }) => {
     return (
         <div className="checkbox">
-            <label className="checkbox__label"> 
+            <label className={color === 'white' ? 'checkbox__label checkbox__label--gray' : 'checkbox__label'}> 
             Отправляя данные, я соглашаюсь с <strong><a href='#!' className={`checkbox__link--${color}`}>Условиями конкурса</a><br /> 
             и <a href='#!' className={`checkbox__link--${color}`}>Политикой обработки данных</a></strong>
 
