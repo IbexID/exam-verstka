@@ -7,6 +7,9 @@ interface ITimer{
 
 const Timer: React.FC<ITimer> = ({date}) => {
 
+    const countdownDate = new Date('08-04-2022');
+  
+  
     const diff = (date.getTime() - new Date().getTime())
 
     const days = Math.floor(diff / 1000 / 60 / 60 / 24).toString().length > 1 ? Math.floor(diff / 1000 / 60 / 60 / 24).toString() : '0' + Math.floor(diff / 1000 / 60 / 60 / 24).toString();

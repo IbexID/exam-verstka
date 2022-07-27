@@ -1,5 +1,6 @@
 @import './vars.scss';
 @import './fonts.scss';
+@import './keyframes.scss';
 
 * {
   box-sizing: border-box;
@@ -8,16 +9,18 @@
 }
 
 input,
-button{
+button {
   border: none;
   outline: none;
   cursor: pointer;
 }
+
 a {
   text-decoration: none;
 }
 
 body {
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -28,23 +31,28 @@ body {
 h1 {
   @include h1-font;
 }
+
 img {
   display: block;
   object-fit: cover;
 }
-.checkbox{
+
+.checkbox {
   width: max-content;
-  &__label{
+
+  &__label {
     width: 100%;
     text-align-last: left;
     display: inline-block;
     position: relative;
     padding-left: 29px;
   }
-  &__input{
+
+  &__input {
     @include checkbox;
   }
-  &__tick{
+
+  &__tick {
     cursor: pointer;
     position: absolute;
     top: 6px;
@@ -54,37 +62,46 @@ img {
     height: 10px;
     background-size: cover;
   }
-  &__link--green{
+
+  &__link--green {
     color: $mainGreen;
   }
-  &__link--white{
+
+  &__link--white {
     color: $mainWhite;
   }
 }
-.primaryButton{
-  @include primaryButton;
+
+.solid-button {
+  @include solid-button;
 }
 
-.paragraph--large{
+.transparent-button {
+  @include transparent-button;
+}
+
+.paragraph--large {
   @include paragraph-large;
 }
-.paragraph--medium{
+
+.paragraph--medium {
   @include paragraph-medium;
 }
-.paragraph--small{
+
+.paragraph--small {
   @include paragraph-small;
 }
 
-.contest{
-  
-  &__item{
+.contest {
+
+  &__item {
     border-radius: 16px;
     width: 445px;
     height: 170px;
     background-color: $mainWhite;
     box-shadow: 0px 5px 30px 0px rgba(215, 211, 225, 0.5);
     padding: 0px 35px 25px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -93,14 +110,15 @@ img {
   }
 }
 
-.plan{
-  &__step{
+.plan {
+  &__step {
     display: flex;
     justify-content: space-between;
     width: max-content;
     gap: 40px;
   }
-  &__step-circle{
+
+  &__step-circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,28 +127,33 @@ img {
     border-radius: 50%;
     background-color: $mainOrange;
   }
-  &__step-count{
+
+  &__step-count {
     @include plan-step-font;
   }
-  &__step-info{
+
+  &__step-info {
     text-align: left;
     @include paragraph-medium;
   }
-  &__step-link{
+
+  &__step-link {
     @include plan-link-font;
   }
 }
 
-.timer{
+.timer {
   display: flex;
   gap: 10px;
-  &__pad{
+
+  &__pad {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__pad-time{
-    
+
+  &__pad-time {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,13 +164,201 @@ img {
     box-shadow: 0px 5px 30px 0px rgba(215, 211, 225, 0.5);
     @include timerPadTime;
   }
-  &__colon{
+
+  &__colon {
     @include timerColon;
+    animation: timer 2s linear 0.5s infinite ;
   }
-  &__text{
+
+  &__text {
     @include timerText;
   }
-  &__subtext{
+
+  &__subtext {
     @include subtext;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &__text {
+    @include logo-font;
+  }
+
+  &__text-emphasis {
+    color: $mainOrange;
+    font-weight: 400;
+  }
+}
+
+.cover {
+  padding-left: 262px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 60px;
+  &__space-wrapper{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  &__space{
+    position: relative;
+  }
+  &__space-icon{
+    position: absolute;
+  }
+  &__space-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__star{
+    width: 20px;
+    height: 20px;
+  }
+  &__star-1{
+    top: 18px;
+    left: 137px;
+    transform: rotate(30deg);
+  }
+  &__star-2{
+    top: 37px;
+    left: 737px;
+    transform: rotate(30deg) scale(0.95);
+  }
+  &__star-3{
+    top: 86px;
+    left: 387px;
+    transform:  scale(0.85);
+  }
+  &__star-4{
+    top: 110px;
+    left: 657px;
+    transform: rotate(30deg) scale(0.95);
+  }
+  &__star-5{
+    top: 190px;
+    left: 304px;
+    transform: rotate(45deg) scale(0.8);
+  }
+  &__star-6{
+    top: 148px;
+    left: 828px;
+    transform: rotate(45deg) scale(0.8);
+  }
+  &__star-7{
+    top: 205px;
+    left: 736px;
+    transform: rotate(45deg) scale(0.78);
+  }
+  &__star-8{
+    top: 460px;
+    left: 322px;
+    transform: rotate(60deg) scale(0.4);
+  }
+  &__star-9{
+    top: 517px;
+    left: 320px;
+    transform: rotate(45deg) scale(0.38);
+  }
+  &__star-10{
+    top: 519px;
+    left: 406px;
+    transform: rotate(45deg) scale(0.41);
+  }
+  &__atom{
+    left: 93px;
+    top: 136px;
+  }
+  &__planet{
+    top: 465px;
+    left: 335px;
+  }
+  &__planet-2{
+    top: 138px;
+    left: 445px;
+  }
+  &__planet-3{
+    top: 86px;
+    left: 227px;
+  }
+  &__clock{
+    top: 224px;
+    left: 136px;
+  }
+  &__rocket{
+    top: 357px;
+    left: 106px;
+  }
+  &__balloon{
+    top: 300px;
+    left: 372px;
+  }
+  &__lightbulb{
+    top: 331px;
+    left: 482px;
+  }
+  &__elephant{
+    top: 229px;
+    left: 595px;
+  }
+  &__airplane{
+    top: 333px;
+    left: 736px;
+  }
+  &__division-sign{
+    top: 189px;
+    left: 533px;
+  }
+  &__plus-sign{
+    top: 245px;
+    left: 450px;
+  }
+  &__palette{
+    top: 123px;
+    left: 739px;
+  }
+  &__planes{
+    left: 187px;
+    top: 720px;
+  }
+  &__girl{
+    top: 480px;
+    left: 388px;
+  }
+  &__brush{
+    top: 636px;
+    left: 427px;
+    z-index: -2;
+  }
+  &__top {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-right: 262px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  &__info{
+    margin: 248px 0 60px;
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+  }
+  &__info-company{
+    @include subtext;
+    text-transform: uppercase;  
+  }
+  &__info-title{
+    margin-bottom: 40px;
+  }
+  &__bottom{
+    display: flex;
+    gap: 60px;
   }
 }
