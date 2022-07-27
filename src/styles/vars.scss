@@ -40,6 +40,12 @@ $lightGray: #9FA0A7;
     letter-spacing: 0.08em;
     color: $lightGray;
 }
+@mixin cover-text-font{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+}
 
 @mixin plan-step-font {
     font-family: 'Rubik';

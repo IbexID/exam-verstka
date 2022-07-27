@@ -6,12 +6,17 @@ import SolidButton from './ui/SolidButton';
 import TransparentButton from './ui/TransparentButton';
 
 const Cover: React.FC = () => {
+
+    
+
     return (
         <div className='cover'>
             <div className="cover__space-wrapper">
                 <div className="cover__space">
                     <SpaceCover />
                     <div className='cover__space-icons'>
+                        <p className='cover__space-icon cover__num cover__num-zero cover__num--yellow'>0</p>
+                        <p className='cover__space-icon cover__num cover__num-one cover__num--pink'>1</p>
                         <img className='cover__star-1 cover__star cover__space-icon' alt='' src={require('../images/cover-star.png')}/>
                         <img className='cover__star-2 cover__star cover__space-icon' alt='' src={require('../images/cover-star.png')}/>
                         <img className='cover__star-3 cover__star cover__space-icon' alt='' src={require('../images/cover-star.png')}/>

@@ -1,26 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import TimerPad from './TimerPad';
 
-interface ITimer{
+interface ITimer {
     date: Date;
 }
 
-const Timer: React.FC<ITimer> = ({date}) => {
+const Timer: React.FC<ITimer> = ({ date }) => {
 
-    const countdownDate = new Date('08-04-2022');
-  
-  
-    const diff = (date.getTime() - new Date().getTime())
+    const [minutes, setMinutes] = useState('00')
+    const [hours, setHours] = useState('00')
+    const [days, setDays] = useState('00')
 
-    const days = Math.floor(diff / 1000 / 60 / 60 / 24).toString().length > 1 ? Math.floor(diff / 1000 / 60 / 60 / 24).toString() : '0' + Math.floor(diff / 1000 / 60 / 60 / 24).toString();
-    const hours = Math.floor((diff / 1000 / 60 / 60) % 24).toString().length > 1 ? Math.floor((diff / 1000 / 60 / 60) % 24).toString() : '0' + Math.floor((diff / 1000 / 60 / 60) % 24).toString();
-    const minutes = Math.floor((diff / 1000 / 60) % 60).toString().length > 1 ? Math.floor((diff / 1000 / 60) % 60).toString() : '0' + Math.floor((diff / 1000 / 60) % 60).toString();
+    const setTime = () => {
+        setInterval(() => {
+            const diff = date.getTime() - new Date().getTime()
+            const daysToSet = Math.floor(diff / 1000 / 60 / 60 / 24).toString().length > 1 ? Math.floor(diff / 1000 / 60 / 60 / 24).toString() : '0' + Math.floor(diff / 1000 / 60 / 60 / 24).toString();
+            const hoursToSet = Math.floor((diff / 1000 / 60 / 60) % 24).toString().length > 1 ? Math.floor((diff / 1000 / 60 / 60) % 24).toString() : '0' + Math.floor((diff / 1000 / 60 / 60) % 24).toString();
+            const minutesToSet = Math.floor((diff / 1000 / 60) % 60).toString().length > 1 ? Math.floor((diff / 1000 / 60) % 60).toString() : '0' + Math.floor((diff / 1000 / 60) % 60).toString();
+            setDays(daysToSet);
+            setHours(hoursToSet);
+            setMinutes(minutesToSet)
+        }, 1000)
+    }
+    useEffect(()=>{
+        setTime()
+    }, [minutes])
+    
 
     return (
         <div className='timer'>
-            <TimerPad time={days} type='day'/>
+            <TimerPad time={days} type='days' />
             <span className='timer__colon'>:</span>
-            <TimerPad time={hours} type='hours'/>
+            <TimerPad time={hours} type='hours' />
             <span className='timer__colon'>:</span>
             <TimerPad time={minutes} type='minutes' />
         </div>

@@ -1,9 +1,279 @@
 @keyframes timer {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+}
+
+@keyframes atom {
+    0% {
+        transform: rotate(-20deg) scale(0);
+    }
+
+    20% {
+        transform: rotate(-17deg) scale(0.3);
+    }
+
+    40% {
+        transform: rotate(-7deg) scale(0.7);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    60% {
+        transform: rotate(7deg) scale(0.7);
+    }
+
+    80% {
+        transform: rotate(17deg) scale(0.3);
+    }
+
+    100% {
+        transform: rotate(20deg) scale(0);
+    }
+}
+
+@keyframes lightbulb {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(25deg);
+    }
+
+    90% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes clock {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(-180deg) scale(1.1);
+    }
+
+    45% {
+        transform: rotate(-240deg) scale(1.2);
+    }
+
+    65% {
+        transform: rotate(-270deg) scale(1.1);
+    }
+
+    90% {
+        transform: rotate(-345deg) scale(1.05);
+    }
+
+    100% {
+        transform: rotate(-360deg) scale(1);
+    }
+}
+
+@keyframes rocket {
+    0% {
+        top: 367px;
+    }
+
+    40% {
+        top: 310px;
+    }
+
+    60% {
+        top: 310px;
+    }
+
+    100% {
+        top: 367px;
+    }
+}
+
+@keyframes planet-3 {
+    15% {
+        top: 86px;
+        left: 227px;
+    }
+    30% {
+        top: 110px;
+        left: 187px;
+    }
+    70% {
+        top: 110px;
+        left: 187px;
+    }
+    85% {
+        top: 86px;
+        left: 227px;
+    }
+}
+@keyframes planet-2 {
+    15% {
+        left: 445px;
+    }
+    40% {
+        left: 485px;
+    }
+    60% {
+        left: 485px;
+    }
+    85% {
+        left: 445px;
+    }
+}
+@keyframes planet {
+    15% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(-30deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+    85% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes balloon {
+    15% {
+        top: 300px;
+    }
+    40% {
+        top: 340px;
+    }
+    60% {
+        top: 340px;
+    }
+    85% {
+        top: 300px;
+    }
+}
+@keyframes palette {
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes elephant {
+    0%{
+        left: 595px;
+        transform: rotate(-11deg);
+    }
+   
+    50%{
+        left: 605px;
+        transform: rotate(30deg);
+    }
+    100%{
+        left: 595px;
+        transform: rotate(-11deg);
+    }
+}
+@keyframes sign-animation {
     0%{
         opacity: 0;
     }
-    
-    25%{
-        opacity: 1;
+    50%{
+        opacity: 0;
+        transform: scale(.8);
     }
+    90%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes plus-sign {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(.8);
+    }
+    90%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes airplane {
+    0%{
+        transform: scale(.5) rotate(45deg);
+    }
+    40%{
+        transform: scale(1) rotate(0deg);
+    }
+    60%{
+        transform: scale(1) rotate(0deg);
+    }
+    100%{
+        transform: scale(.5) rotate(45deg);
+    }
+    
+}
+@keyframes brush-step-1 {
+    0%{
+    top: 623px;
+    left: 412px;
+    }
+    30%{
+        top: 630px;
+        left: 418px;
+        transform: rotate(25deg);
+    }
+    40%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(75deg);
+    }
+    60%{
+        transform: rotate(45deg);
+    }
+    70%{
+        transform: rotate(55deg);
+    }
+    80%{
+        
+        transform: rotate(60deg);
+    }
+    100%{
+        
+        transform: rotate(60deg);
+        top: 630px;
+        left: 415px;
+    }
+    
 }

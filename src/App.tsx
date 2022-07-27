@@ -9,9 +9,9 @@ import PlanStep from "./components/ui/PlanStep";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Cover />
-    </div>
+    </main>
   );
 }
 
