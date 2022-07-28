@@ -66,11 +66,16 @@ $lightGray: #9fa0a7;
     text-decoration-skip-ink: none;
 }
 
-@mixin wavyUnderline {
+@mixin wavy-underline {
     text-decoration: underline wavy;
     text-decoration-color: $mainOrange;
     text-decoration-thickness: 4px;
-    text-underline-offset: 4px;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
+}
+
+@mixin green-emphasis{
+    color: $mainGreen;
 }
 
 @mixin paragraph-large {
@@ -100,7 +105,7 @@ $lightGray: #9fa0a7;
     color: $mainGray;
 }
 
-@mixin navMenutext {
+@mixin nav-menu-text {
     font-family: 'Nunito';
     font-weight: 700;
     font-size: 20px;
@@ -110,11 +115,11 @@ $lightGray: #9fa0a7;
 }
 
 @mixin footer-text{
-    @include navMenutext;
+    @include nav-menu-text;
     font-weight: 400;
 }
 
-@mixin timerPadTime {
+@mixin timer-pad-time {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
@@ -124,7 +129,7 @@ $lightGray: #9fa0a7;
     color: $mainOrange;
 }
 
-@mixin timerColon {
+@mixin timer-colon {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 900;
@@ -134,7 +139,7 @@ $lightGray: #9fa0a7;
     color: $mainBlack;
 }
 
-@mixin timerText {
+@mixin timer-text {
     font-family: 'Nunito';
     font-weight: 400;
     font-size: 16px;

@@ -120,8 +120,19 @@ img {
   @include paragraph-small;
 }
 
-.contest {
-
+.goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+  &__title-underline{
+    @include wavy-underline;
+  }
+  &__tiles{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 30px;
+  }
   &__item {
     border-radius: 16px;
     width: 445px;
@@ -135,6 +146,11 @@ img {
     align-items: flex-start;
     justify-content: flex-end;
     gap: 8px;
+  }
+  &__item-link{
+    color: #FF946E;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
   }
 }
 
@@ -191,16 +207,16 @@ img {
     border-radius: 16px;
     background-color: $mainWhite;
     box-shadow: 0px 5px 30px 0px rgba(215, 211, 225, 0.5);
-    @include timerPadTime;
+    @include timer-pad-time;
   }
 
   &__colon {
-    @include timerColon;
+    @include timer-colon;
     animation: timer 2s linear 0.5s infinite ;
   }
 
   &__text {
-    @include timerText;
+    @include timer-text;
   }
 
   &__subtext {
@@ -342,22 +358,22 @@ img {
   &__clock{
     top: 224px;
     left: 136px;
-    animation: clock 12s linear infinite ;
+    animation: clock 12s ease-in-out infinite ;
   }
   &__rocket{
     top: 357px;
     left: 106px;
-    animation: rocket 12s linear infinite ;
+    animation: rocket 12s ease-out infinite ;
   }
   &__balloon{
     top: 300px;
     left: 372px;
-    animation: balloon 10s ease infinite;
+    animation: balloon 12s ease infinite;
   }
   &__lightbulb{
     top: 331px;
     left: 482px;
-    animation: lightbulb 10s linear infinite ;
+    animation: lightbulb 12s ease-in-out infinite ;
   }
   &__elephant{
     top: 229px;
@@ -367,17 +383,17 @@ img {
   &__airplane{
     top: 333px;
     left: 736px;
-    animation: airplane 10s linear infinite;
+    animation: airplane 12s linear infinite;
   }
   &__division-sign{
     top: 189px;
     left: 533px;
-    animation: sign-animation 10s linear infinite ;
+    animation: sign-animation 12s linear infinite ;
   }
   &__plus-sign{
     top: 245px;
     left: 450px;
-    animation: sign-animation 10s linear 5s infinite ;
+    animation: sign-animation 12s linear 5s infinite ;
   }
   &__palette{
     top: 123px;
@@ -428,6 +444,17 @@ img {
     gap: 60px;
   }
 }
+
+.about{
+  max-width: 790px;
+  text-align: center;
+  margin: 200px auto;
+  &__text-emphasis{
+    font-weight: 700;
+    color: $mainGreen;
+  }
+}
+
 
 
 .subscription{
@@ -506,7 +533,7 @@ img {
     gap: 40px;
   }
   &__links-item{
-    @include navMenutext;
+    @include nav-menu-text;
   }
   &__content-copyright{
     @include paragraph-medium;

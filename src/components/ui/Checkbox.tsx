@@ -2,12 +2,13 @@ import React from 'react';
 
 interface ICheckboxProps {
     color: string;
+    sub?: boolean;
 }
 
-const Checkbox: React.FC<ICheckboxProps> = ({ color }) => {
+const Checkbox: React.FC<ICheckboxProps> = ({ color, sub }) => {
     return (
         <div className="checkbox">
-            <label className={color === 'white' ? 'checkbox__label checkbox__label--gray' : 'checkbox__label'}> 
+            <label className={sub ? 'checkbox__label checkbox__label--gray' : 'checkbox__label'}> 
             Отправляя данные, я соглашаюсь с <strong><a href='#!' className={`checkbox__link--${color}`}>Условиями конкурса</a><br /> 
             и <a href='#!' className={`checkbox__link--${color}`}>Политикой обработки данных</a></strong>
 

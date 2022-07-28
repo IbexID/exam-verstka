@@ -40,71 +40,54 @@
 
 @keyframes lightbulb {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(15deg);
+    }
+    11% {
+        transform: rotate(15deg);
     }
 
-    50% {
+    40% {
+        transform: rotate(40deg);
+    }
+
+    69% {
         transform: rotate(-45deg);
     }
 
-    80% {
-        transform: rotate(0deg);
-    }
-
-    85% {
-        transform: rotate(25deg);
-    }
-
-    90% {
-        transform: rotate(25deg);
+    86% {
+        transform: rotate(20deg);
     }
 
     100% {
-        transform: rotate(0deg);
+        transform: rotate(15deg);
     }
 }
 
 @keyframes clock {
     0% {
-        transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(.7);
     }
 
-    25% {
-        transform: rotate(-180deg) scale(1.1);
-    }
-
-    45% {
-        transform: rotate(-240deg) scale(1.2);
-    }
-
-    65% {
-        transform: rotate(-270deg) scale(1.1);
-    }
-
-    90% {
-        transform: rotate(-345deg) scale(1.05);
+    50% {
+        transform: rotate(-180deg) scale(1);
     }
 
     100% {
-        transform: rotate(-360deg) scale(1);
+        transform: rotate(-360deg) scale(.7);
     }
 }
 
 @keyframes rocket {
-    0% {
-        top: 367px;
+    10% {
+        top: 357px;
     }
 
-    40% {
-        top: 310px;
-    }
-
-    60% {
-        top: 310px;
+    67% {
+        top: 287px;
     }
 
     100% {
-        top: 367px;
+        top: 357px;
     }
 }
 
@@ -184,8 +167,16 @@
         left: 595px;
         transform: rotate(-11deg);
     }
+    25%{
+        left: 595px;
+        transform: rotate(-11deg);
+    }
    
     50%{
+        left: 605px;
+        transform: rotate(30deg);
+    }
+    75%{
         left: 605px;
         transform: rotate(30deg);
     }
@@ -230,16 +221,13 @@
 }
 @keyframes airplane {
     0%{
-        transform: scale(.5) rotate(45deg);
+        transform: scale(.5) rotate(0deg);
     }
-    40%{
-        transform: scale(1) rotate(0deg);
-    }
-    60%{
-        transform: scale(1) rotate(0deg);
+    50%{
+        transform: scale(1) rotate(45deg);
     }
     100%{
-        transform: scale(.5) rotate(45deg);
+        transform: scale(.5) rotate(0deg);
     }
     
 }

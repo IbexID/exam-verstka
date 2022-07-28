@@ -14,7 +14,7 @@ const Subscription: React.FC = () => {
                         <Input type='email' placeholder='Email' />
                         <SolidButton text='Отправить' />
                     </div>
-                    <Checkbox color='white' />
+                    <Checkbox color='white' sub={true} />
                 </form>
             </div>
         </div>
