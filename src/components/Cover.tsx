@@ -48,7 +48,7 @@ const Cover: React.FC = () => {
             </div>
             <div className="cover__top">
                 <div className="cover__logo">
-                    <Logo />
+                    <Logo showLogo/>
                 </div>
                 <div className="cover__button">
                     <TransparentButton text={'Войти'} />

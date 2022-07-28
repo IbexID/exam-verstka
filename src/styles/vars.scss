@@ -16,12 +16,33 @@ $lightGray: #9fa0a7;
     color: $mainBlack;
 }
 
+@mixin h1-diploma-font {
+    font-family: 'Vollkorn';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $mainGreen;
+}
+
 @mixin h2-font {
     font-family: 'Nunito';
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     letter-spacing: 0.04em;
+    color: $mainBlack;
+}
+
+@mixin h4-diploma-font {
+    font-family: 'Vollkorn';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     color: $mainBlack;
 }
 
@@ -32,6 +53,7 @@ $lightGray: #9fa0a7;
     line-height: 40px;
     color: $mainBlack;
 }
+
 @mixin subtext {
     font-family: 'Rubik';
     font-weight: 400;
@@ -40,7 +62,38 @@ $lightGray: #9fa0a7;
     letter-spacing: 0.08em;
     color: $lightGray;
 }
-@mixin cover-text-font{
+
+@mixin diploma-name-font {
+    font-family: 'Vollkorn';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $mainBlack;
+}
+@mixin diploma-place-font {
+    font-family: 'Vollkorn';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $mainGreen;
+}
+@mixin diploma-text-font {
+    font-family: 'Vollkorn';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $mainBlack;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    opacity: 0.6;
+}
+
+@mixin cover-text-font {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 25px;
@@ -74,7 +127,7 @@ $lightGray: #9fa0a7;
     text-decoration-skip-ink: none;
 }
 
-@mixin green-emphasis{
+@mixin green-emphasis {
     color: $mainGreen;
 }
 
@@ -114,7 +167,7 @@ $lightGray: #9fa0a7;
     color: $mainBlack;
 }
 
-@mixin footer-text{
+@mixin footer-text {
     @include nav-menu-text;
     font-weight: 400;
 }

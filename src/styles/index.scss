@@ -15,7 +15,8 @@ button {
   cursor: pointer;
 }
 
-ol, ul{
+ol,
+ul {
   list-style: none;
 }
 
@@ -36,6 +37,7 @@ body {
 h1 {
   @include h1-font;
 }
+
 h2 {
   @include h2-font;
 }
@@ -56,9 +58,11 @@ img {
     padding-left: 29px;
     color: $lightGray;
   }
-  &__label--gray{
+
+  &__label--gray {
     color: #D6D7DD;
   }
+
   &__input {
     @include checkbox;
   }
@@ -83,7 +87,7 @@ img {
   }
 }
 
-.input{
+.input {
   cursor: text;
   height: 60px;
   width: 540px;
@@ -92,10 +96,12 @@ img {
   padding: 18px 0 18px 20px;
   @include paragraph-medium;
   transition: color, border-color 0.1s ease-out;
-  &:hover{
+
+  &:hover {
     border-color: $mainGray;
   }
-  &:hover::placeholder{
+
+  &:hover::placeholder {
     color: $mainGray;
   }
 }
@@ -120,7 +126,7 @@ img {
   @include paragraph-small;
 }
 
-.wavy-underline{
+.wavy-underline {
   @include wavy-underline;
 }
 
@@ -131,11 +137,13 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 58px;
-  &__tiles{
+
+  &__tiles {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     gap: 30px;
   }
+
   &__item {
     border-radius: 16px;
     width: 445px;
@@ -150,7 +158,8 @@ img {
     justify-content: flex-end;
     gap: 8px;
   }
-  &__item-link{
+
+  &__item-link {
     color: #FF946E;
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -164,25 +173,45 @@ img {
   margin-top: 106px;
   min-height: 907px;
   background: url('../images/plan-bg.png');
-  &__steps{
+  z-index: -2;
+
+  &__steps-wrapper{
+    position: relative;
     margin-top: 87px;
+    width: 1360px;
+  }
+
+  &__steps {
+    margin-right: 58px;
+    width: 100%;
     display: grid;
-    width: 1255px;
     grid-template: auto auto auto / auto auto auto;
   }
+
+  &__line {
+    position: absolute;
+    top: 45px;
+    left: 69px;
+    z-index: 1;
+  }
+
   &__step {
+    z-index: 2;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     width: max-content;
     gap: 40px;
     max-width: 388px;
   }
-  &__step:nth-child(2){
-    margin: 123px 0 136px;
+
+  &__step:nth-child(2) {
+    margin: 121px 0 131px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
-  &__step:nth-child(3){
+
+  &__step:nth-child(3) {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
   }
@@ -208,6 +237,103 @@ img {
 
   &__step-link {
     @include plan-link-font;
+  }
+}
+
+.diploma{
+  width: 100%;
+  margin-top: -37px;
+  padding: 0 265px 156px 264px;
+  background: url('../images/participationgoal-bg.png') no-repeat;
+  background-position: right 0px top 185px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__info{
+    width: 497px;
+  }
+  &__info-title{
+    margin-bottom: 27px;
+    white-space: nowrap;
+  }
+  &__info-text:not(:last-child){
+    margin-bottom: 30px;
+  }
+  &__card-wrapper{
+    transform: scale(0.808);
+    transform-origin: right;
+  }
+  &__card{
+    position: relative;
+    width: 842px;
+    height: 595px;
+    background: linear-gradient(90deg, #6693B4 0%, #8FEFEA 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card-underlay{
+    background: $mainWhite;
+    width: 794px;
+    height: 551px;
+    padding: 74px 147px 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+  }
+  &__card-title{
+    @include h1-diploma-font;
+  }
+  &__card-subtitle{
+    @include h4-diploma-font;
+  }
+  &__card-name{
+    @include diploma-name-font;
+    width: 100%;
+    border-bottom: 2px solid $mainGreen;
+    border-radius: 1px
+  }
+  &__card-place{
+    @include diploma-place-font;
+  }
+  &__card-category{
+    @include diploma-text-font;
+    margin-bottom: 45px;
+    white-space: pre-wrap;
+  }
+  &__card-date{
+    @include diploma-text-font;
+  }
+  &__card-image{
+    position: absolute;
+  }
+  &__card-logo{
+    z-index: 2;
+    left: 64px;
+    bottom: 77px;
+  }
+  &__card-print{
+    bottom: 37px;
+    right: 57px;
+    transform: rotate(16deg);
+    z-index: 2;
+  }
+  &__card-water{
+    right: 0;
+    bottom: 0;
+  }
+  &__card-clouds{
+    top: 49px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+  }
+  &__card-tree{
+    left: 0;
+    bottom: 0;
+    z-index: 2;
   }
 }
 
@@ -237,7 +363,7 @@ img {
 
   &__colon {
     @include timer-colon;
-    animation: timer 2s linear 0.5s infinite ;
+    animation: timer 2s linear 0.5s infinite;
   }
 
   &__text {
@@ -271,178 +397,214 @@ img {
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 60px;
-  &__space-wrapper{
+
+  &__space-wrapper {
     position: absolute;
     right: 0;
     z-index: -1;
   }
-  &__space{
+
+  &__space {
     position: relative;
   }
-  &__space-icon{
+
+  &__space-icon {
     position: absolute;
   }
-  &__space-icons{
+
+  &__space-icons {
     position: absolute;
     top: 0;
     left: 0;
   }
-  &__num{
+
+  &__num {
     @include cover-text-font;
   }
-  &__num--yellow{
+
+  &__num--yellow {
     color: #FCC947;
   }
-  &__num--pink{
+
+  &__num--pink {
     color: #E075AD;
   }
-  &__num-zero{
+
+  &__num-zero {
     top: 264px;
     left: 720px;
     transform: matrix(0.97, -0.25, 0.25, 0.97, 0, 0);
   }
-  &__num-one{
+
+  &__num-one {
     top: 213px;
     left: 797px;
     transform: matrix(0.87, 0.5, -0.5, 0.87, 0, 0);
   }
-  &__star{
+
+  &__star {
     width: 20px;
     height: 20px;
   }
-  &__star-1{
+
+  &__star-1 {
     top: 18px;
     left: 137px;
     transform: rotate(30deg);
   }
-  &__star-2{
+
+  &__star-2 {
     top: 37px;
     left: 737px;
     transform: rotate(30deg) scale(0.95);
   }
-  &__star-3{
+
+  &__star-3 {
     top: 86px;
     left: 387px;
-    transform:  scale(0.85);
+    transform: scale(0.85);
   }
-  &__star-4{
+
+  &__star-4 {
     top: 110px;
     left: 657px;
     transform: rotate(30deg) scale(0.95);
   }
-  &__star-5{
+
+  &__star-5 {
     top: 190px;
     left: 304px;
     transform: rotate(45deg) scale(0.8);
   }
-  &__star-6{
+
+  &__star-6 {
     top: 148px;
     left: 828px;
     transform: rotate(45deg) scale(0.8);
   }
-  &__star-7{
+
+  &__star-7 {
     top: 205px;
     left: 736px;
     transform: rotate(45deg) scale(0.78);
   }
-  &__star-8{
+
+  &__star-8 {
     top: 460px;
     left: 322px;
     transform: rotate(60deg) scale(0.4);
   }
-  &__star-9{
+
+  &__star-9 {
     top: 517px;
     left: 320px;
     transform: rotate(45deg) scale(0.38);
   }
-  &__star-10{
+
+  &__star-10 {
     top: 519px;
     left: 406px;
     transform: rotate(45deg) scale(0.41);
   }
-  &__atom{
+
+  &__atom {
     left: 93px;
     top: 136px;
-    animation: atom 12s linear 0s infinite ;
+    animation: atom 12s linear 0s infinite;
   }
-  &__planet{
+
+  &__planet {
     top: 465px;
     left: 335px;
     animation: planet 12s linear infinite;
   }
-  &__planet-2{
+
+  &__planet-2 {
     top: 138px;
     left: 445px;
     animation: planet-2 12s ease infinite;
   }
-  &__planet-3{
+
+  &__planet-3 {
     top: 86px;
     left: 227px;
     animation: planet-3 12s ease infinite;
   }
-  &__clock{
+
+  &__clock {
     top: 224px;
     left: 136px;
-    animation: clock 12s ease-in-out infinite ;
+    animation: clock 12s ease-in-out infinite;
   }
-  &__rocket{
+
+  &__rocket {
     top: 357px;
     left: 106px;
-    animation: rocket 12s ease-out infinite ;
+    animation: rocket 12s ease-out infinite;
   }
-  &__balloon{
+
+  &__balloon {
     top: 300px;
     left: 372px;
     animation: balloon 12s ease infinite;
   }
-  &__lightbulb{
+
+  &__lightbulb {
     top: 331px;
     left: 482px;
-    animation: lightbulb 12s ease-in-out infinite ;
+    animation: lightbulb 12s ease-in-out infinite;
   }
-  &__elephant{
+
+  &__elephant {
     top: 229px;
     left: 595px;
     animation: elephant 12s ease infinite;
   }
-  &__airplane{
+
+  &__airplane {
     top: 333px;
     left: 736px;
     animation: airplane 12s linear infinite;
   }
-  &__division-sign{
+
+  &__division-sign {
     top: 189px;
     left: 533px;
-    animation: sign-animation 12s linear infinite ;
+    animation: sign-animation 12s linear infinite;
   }
-  &__plus-sign{
+
+  &__plus-sign {
     top: 245px;
     left: 450px;
-    animation: sign-animation 12s linear 5s infinite ;
+    animation: sign-animation 12s linear 5s infinite;
   }
-  &__palette{
+
+  &__palette {
     top: 123px;
     left: 739px;
     animation: palette 12s linear infinite;
   }
-  &__planes{
+
+  &__planes {
     left: 187px;
     top: 720px;
   }
-  &__girl{
+
+  &__girl {
     top: 480px;
     left: 388px;
   }
-  &__brush{
+
+  &__brush {
     top: 623px;
     left: 412px;
     z-index: -2;
     animation: brush-step-1 2s linear 1.5s 1 forwards;
     animation: name duration timing-function delay iteration-count direction fill-mode;
   }
-  &__brush-step-1{
 
-  }
+  &__brush-step-1 {}
+
   &__top {
     width: 100%;
     display: flex;
@@ -451,30 +613,35 @@ img {
     justify-content: space-between;
     overflow: hidden;
   }
-  &__info{
+
+  &__info {
     margin: 248px 0 60px;
     display: flex;
     flex-direction: column;
     max-width: 650px;
   }
-  &__info-company{
+
+  &__info-company {
     @include subtext;
-    text-transform: uppercase;  
+    text-transform: uppercase;
   }
-  &__info-title{
+
+  &__info-title {
     margin-bottom: 40px;
   }
-  &__bottom{
+
+  &__bottom {
     display: flex;
     gap: 60px;
   }
 }
 
-.about{
+.about {
   max-width: 790px;
   text-align: center;
   margin: 200px auto 164px;
-  &__text-emphasis{
+
+  &__text-emphasis {
     font-weight: 700;
     color: $mainGreen;
   }
@@ -482,12 +649,13 @@ img {
 
 
 
-.subscription{
+.subscription {
   margin-top: 200px;
   padding: 0 120px;
   height: 373px;
   width: 100%;
-  &__wrapper{
+
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -498,14 +666,17 @@ img {
     width: 1680px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/subscription-bg.png');
   }
-  &__title{
+
+  &__title {
     color: $mainWhite;
   }
-  &__text{
+
+  &__text {
     color: $mainWhite;
     margin-bottom: 20px;
   }
-  &__top{
+
+  &__top {
     width: 930px;
     margin-bottom: 20px;
     display: flex;
@@ -513,11 +684,12 @@ img {
   }
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   padding: 70px 223px 64px 265px;
-  &__social{
+
+  &__social {
     display: grid;
     row-gap: 9px;
     column-gap: 22px;
@@ -525,20 +697,24 @@ img {
     justify-items: center;
     grid-template: auto / 1fr 1fr 1fr;
   }
-  &__social-info{
+
+  &__social-info {
     @include footer-text;
     grid-column: 1 / 4;
   }
-  &__up{
+
+  &__up {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 9px;
   }
-  &__up-info{
+
+  &__up-info {
     @include footer-text;
   }
-  &__up-button{
+
+  &__up-button {
     height: 56px;
     width: 56px;
     background-color: $mainOrange;
@@ -547,20 +723,24 @@ img {
     justify-content: center;
     align-items: center;
   }
-  &__content{
+
+  &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 49px;
   }
-  &__links-list{
+
+  &__links-list {
     display: flex;
     gap: 40px;
   }
-  &__links-item{
+
+  &__links-item {
     @include nav-menu-text;
   }
-  &__content-copyright{
+
+  &__content-copyright {
     @include paragraph-medium;
   }
 }

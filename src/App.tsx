@@ -4,6 +4,7 @@ import Subscription from "./components/Subscription";
 import About from "./components/About";
 import ParticipationGoal from "./components/ParticipationGoal";
 import Plan from "./components/Plan";
+import Diploma from "./components/Diploma";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <About />
         <ParticipationGoal />
         <Plan />
+        <Diploma />
         <Subscription />
       </main>
       <footer>
