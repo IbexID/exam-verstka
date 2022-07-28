@@ -120,14 +120,17 @@ img {
   @include paragraph-small;
 }
 
+.wavy-underline{
+  @include wavy-underline;
+}
+
 .goal {
+  background: url('../images/participationgoal-bg.png');
+  padding: 36px 0 94px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 58px;
-  &__title-underline{
-    @include wavy-underline;
-  }
   &__tiles{
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -155,11 +158,33 @@ img {
 }
 
 .plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 106px;
+  min-height: 907px;
+  background: url('../images/plan-bg.png');
+  &__steps{
+    margin-top: 87px;
+    display: grid;
+    width: 1255px;
+    grid-template: auto auto auto / auto auto auto;
+  }
   &__step {
     display: flex;
     justify-content: space-between;
     width: max-content;
     gap: 40px;
+    max-width: 388px;
+  }
+  &__step:nth-child(2){
+    margin: 123px 0 136px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  &__step:nth-child(3){
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
   }
 
   &__step-circle {
@@ -167,7 +192,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 80px;
-    width: 80px;
+    min-width: 80px;
     border-radius: 50%;
     background-color: $mainOrange;
   }
@@ -448,7 +473,7 @@ img {
 .about{
   max-width: 790px;
   text-align: center;
-  margin: 200px auto;
+  margin: 200px auto 164px;
   &__text-emphasis{
     font-weight: 700;
     color: $mainGreen;

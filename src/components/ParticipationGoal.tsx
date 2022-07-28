@@ -1,6 +1,5 @@
 import React from 'react';
 import ParticipationGoalItem from './ParticipationGoalItem';
-import ContestItem from './ParticipationGoalItem';
 
 const ParticipationGoal: React.FC = () => {
 
@@ -34,11 +33,11 @@ const ParticipationGoal: React.FC = () => {
 
     return (
         <article className='goal'>
-            <h2 className='goal__title'>Для чего <span className='goal__title-underline'>нужно</span> участвовать</h2>
+            <h2 className='goal__title'>Для чего <span className='wavy-underline'>нужно</span> участвовать</h2>
             <div className="goal__tiles">
                 {goals.map( goal =>{
                     return (
-                        <ParticipationGoalItem text={goal.text} id={goal.id} />
+                        <ParticipationGoalItem key={goal.id} text={goal.text} id={goal.id} />
                     )
                 })}
             </div>
