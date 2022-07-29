@@ -53,6 +53,7 @@ const RegisterForm: React.FC = () => {
             <Checkbox color='green' />
             <div className="register__form-bottom">
                 <SolidButton text='Участвовать' red />
+                <img className='register__form-planes' src={require('../images/planes.png')} alt="planes" />
             </div>
         </form>
     );

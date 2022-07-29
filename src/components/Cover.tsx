@@ -40,7 +40,7 @@ const Cover: React.FC = () => {
                         <img className='cover__space-icon cover__clock' src={require('../images/cover-clock.png')} alt="" />
                         <img className='cover__space-icon cover__plus-sign' src={require('../images/cover-plus-sign.png')} alt="" />
                         <img className='cover__space-icon cover__division-sign' src={require('../images/cover-division-sign.png')} alt="" />
-                        <img className='cover__space-icon cover__planes' src={require('../images/cover-planes.png')} alt="" />
+                        <img className='cover__space-icon cover__planes' src={require('../images/planes.png')} alt="" />
                         <img className='cover__space-icon cover__girl' src={require('../images/cover-girl.png')} alt="" />
                         <img className='cover__space-icon cover__brush' src={require('../images/cover-brush.png')} alt="" />
                         </div>

@@ -6,6 +6,7 @@ import ParticipationGoal from "./components/ParticipationGoal";
 import Plan from "./components/Plan";
 import Diploma from "./components/Diploma";
 import Register from "./components/Register";
+import Questions from "./components/Questions";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Plan />
         <Diploma />
         <Register />
+        <Questions />
         <Subscription />
       </main>
       <footer>

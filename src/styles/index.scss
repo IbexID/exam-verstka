@@ -658,11 +658,35 @@ img {
   }
 }
 
+.expand-button{
+  height: 48px;
+  width: 48px;
+  background-color: $mainOrange;
+  border-radius: 50%;
+  position: relative;
+  &::after,
+  &::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 21px;
+    background-color: $mainWhite;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1px;
+  }
+  &::before{
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
 .register{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 287px 0 264px;
+  margin-bottom: 200px;
   &__title{
     margin-bottom: 50px;
   }
@@ -677,7 +701,15 @@ img {
   }
   &__form-bottom{
     display: flex;
+    align-items: center;
     margin-top: 50px;
+    padding-bottom: 19px;
+    position: relative;
+  }
+  &__form-planes{
+    position: absolute;
+    bottom: 0;
+    right: 33px;
   }
   &__banner{
     width: 490px;
@@ -741,6 +773,27 @@ img {
   }
 }
 
+.questions{
+  padding: 0 258px 0 262px;
+  &__title{
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__item{
+    padding: 21px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $mainBlack;
+  }
+  &__item:first-of-type{
+    padding: 31px 0;
+    border-top: 1px solid $mainBlack;
+  }
+  &__text{
+
+  }
+}
 
 
 .subscription {
