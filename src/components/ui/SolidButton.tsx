@@ -2,11 +2,12 @@ import React from 'react';
 
 export interface IButtonProps{
     text: string;
+    red?: boolean
 }
 
-const SolidButton: React.FC<IButtonProps> = ({text}) => {
+const SolidButton: React.FC<IButtonProps> = ({text, red}) => {
     return (
-        <button className='solid-button'>
+        <button className={red ? 'solid-button solid-button--red' : 'solid-button'}>
             {text}
         </button>
     );

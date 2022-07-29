@@ -6,6 +6,7 @@ $mainViolet: linear-gradient(326.12deg, #5D77FF 17.95%, #6539C1 89.78%);
 $mainBlack: #1f1d2a;
 $mainGray: #4f5569;
 $lightGray: #9fa0a7;
+$paleGreenShadow: rgba(20, 167, 114, 0.2);
 
 
 @mixin h1-font {
@@ -166,6 +167,24 @@ $lightGray: #9fa0a7;
     letter-spacing: 0.03em;
     color: $mainBlack;
 }
+@mixin banner-text {
+    @include nav-menu-text;
+    color: $mainWhite;
+}
+@mixin banner-old-price{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: $mainBlack;
+}
+@mixin banner-new-price{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 114px;
+    color: $mainBlack;
+}
 
 @mixin footer-text {
     @include nav-menu-text;
@@ -215,6 +234,11 @@ $lightGray: #9fa0a7;
     letter-spacing: 0.04em;
     box-shadow: 0px 15px 30px 0px rgba(25, 218, 140, 0.25);
     border-radius: 15px;
+}
+
+@mixin solid-button--red{
+    box-shadow: 0px 15px 30px 0px rgba(218, 71, 25, 0.25);
+    background-color: $mainRed
 }
 
 @mixin transparent-button {

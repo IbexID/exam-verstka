@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterNavLink from './FooterNavLink';
-import FooterSocialIcon from './ui/FooterSocialIcon';
+import SocialIcon from './ui/SocialIcon';
 
 const Footer: React.FC = () => {
 
@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
         <footer className='footer'>
             <div className="footer__social">
                 <p className="footer__social-info">Наши соцсети:</p>
-                <a href='#!'><FooterSocialIcon name='twitter' /></a>
-                <a href='#!'><FooterSocialIcon name='yz' /></a>
-                <a href='#!'><FooterSocialIcon name='vk' /></a>
+                <a href='#!'><SocialIcon name='twitter' /></a>
+                <a href='#!'><SocialIcon name='yz' /></a>
+                <a href='#!'><SocialIcon name='vk' /></a>
             </div>
             <div className="footer__content">
                 <nav className="footer__content-links">

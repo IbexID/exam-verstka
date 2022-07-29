@@ -1,16 +1,14 @@
 import React from 'react';
+import RegisterBanner from './RegisterBanner';
+import RegisterForm from './RegisterForm';
 
 const Register: React.FC = () => {
     return (
         <article className='register'>
-            <h2 className='register__title'>Зарегистрируйтесь, чтобы участвовать</h2>
+            <RegisterBanner oldPrice={299} newPrice={149} />
             <div className="register__content">
-                <div className="register__banner">
-
-                </div>
-                <div className="register__form">
-                    
-                </div>
+                <h2 className='register__title'>Зарегистрируйтесь, чтобы участвовать</h2>
+                <RegisterForm />
             </div>
         </article>
     );

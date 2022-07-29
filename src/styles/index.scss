@@ -108,7 +108,12 @@ img {
 
 .solid-button {
   @include solid-button;
+  &--red{
+    @include solid-button--red;
+  }
 }
+
+
 
 .transparent-button {
   @include transparent-button;
@@ -636,6 +641,12 @@ img {
   }
 }
 
+.social-icon{
+  background-color: $mainWhite;
+  border: 1px solid $mainWhite;
+  border-radius: 10px;
+}
+
 .about {
   max-width: 790px;
   text-align: center;
@@ -644,6 +655,89 @@ img {
   &__text-emphasis {
     font-weight: 700;
     color: $mainGreen;
+  }
+}
+
+.register{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 287px 0 264px;
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__form{
+    width: 658px;
+  }
+  &__inputs-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 52px;
+  }
+  &__form-bottom{
+    display: flex;
+    margin-top: 50px;
+  }
+  &__banner{
+    width: 490px;
+    height: 476px;
+    border-radius: 40px;
+    border: 3px solid $mainGreen;
+    box-shadow: 0px 5px 15px $paleGreenShadow;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__banner-flag{
+    position: absolute;
+    left: 50%;
+    top: -17px;
+    transform: translate(-50%, 0);
+  }
+  &__banner-name{
+    position: absolute;
+    left: 50%;
+    top: 7px;
+    transform: translate(-50%, 0);
+    @include banner-text;
+  }
+  &__banner-content{
+    padding: 136px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__banner-text{
+    white-space: nowrap;
+  }
+  &__banner-prices{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  &__banner-old{
+    @include banner-old-price;
+    margin-top: 16px;
+    text-decoration: line-through;
+  }
+  &__banner-new{
+    @include banner-new-price;
+  }
+  &__banner-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 58px 20px 61px;
+    border-radius: 0px 0px 40px 40px;
+    background: $mainGreen;
+    @include banner-text;
+  }
+  &__banner-socials{
+    display: flex;
+    gap: 18px;
   }
 }
 
