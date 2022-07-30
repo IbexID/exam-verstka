@@ -12,11 +12,14 @@
     25%{
         background-color: $mainOrange;
         color: $mainWhite;
-        border-color: $mainOrange;
+        
+        border: 1px solid $mainOrange;
     }
     100%{
         background-color: $mainWhite;
         color: $mainBlack;
+        
+        border: 1px solid $mainBlack;
     }
 }
 
@@ -385,4 +388,47 @@
         transform: rotate(-10deg);
     }
 
+}
+
+@keyframes flying-plane {
+    0%{
+        left: 50px;
+        top: 130px;
+    }
+    10%{
+        left: 230px;
+        top: 160px;
+        motion-offset: 0%;
+        offset-distance: 0%;
+    }
+    20%{
+        left: 310px;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+      }
+    40%{
+        transform: rotate(0deg);
+      }
+    60%{
+        transform: rotate(-20deg);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+    100% {
+        
+        transform: rotate(00deg);
+        motion-offset: 100%;
+        offset-distance: 100%;
+      }
+}
+@keyframes appearing-plan {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

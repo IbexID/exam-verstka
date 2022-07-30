@@ -180,18 +180,28 @@ img {
   min-height: 907px;
   background: url('../images/plan-bg.png');
   z-index: -2;
+  overflow: hidden;
+  position: relative;
 
   &__steps-wrapper{
     position: relative;
-    margin-top: 87px;
-    width: 1360px;
+    margin-top: 86px;
+    width: 1352px;
+  }
+  &__steps-plane{
+    z-index: 3;
+    left: 300px;
+    top: 160px;
+    position: absolute;
+    animation: flying-plane 2s linear 1 forwards;
+    offset-path: path("M1 2C215.948 27.7838 428.915 227.762 757.992 359.956C980.664 449.406 1146.81 468.579 1302.12 419.969, M1304.5 419.5C1538.06 350.051 1658.28 179.316 1752.5 284");
   }
 
   &__steps {
     margin-right: 58px;
     width: 100%;
     display: grid;
-    grid-template: auto auto auto / auto auto auto;
+    grid-template: 80px auto auto / 467px 480px auto;
   }
 
   &__line {
@@ -203,23 +213,28 @@ img {
 
   &__step {
     z-index: 2;
+    opacity: 0;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     width: max-content;
     gap: 40px;
-    max-width: 388px;
+    max-width: 350px;
+    animation: appearing-plan 1s linear .25s 1 forwards;
   }
 
   &__step:nth-child(2) {
-    margin: 121px 0 131px;
+    margin: 123px 0 136px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    animation: appearing-plan 1s linear .75s 1 forwards;
   }
 
   &__step:nth-child(3) {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
+    max-width: 388px;
+    animation: appearing-plan 1s linear 1.25s 1 forwards;
   }
 
   &__step-circle {

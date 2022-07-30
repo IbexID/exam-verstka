@@ -23,6 +23,7 @@ const Plan: React.FC = () => {
 
     return (
         <article className='plan'>
+            <img className='plan__steps-plane' src={require('../images/flying-plane.png')} alt="" />
             <h2 className='plan__title'>Пошаговый <span className='wavy-underline'>план</span></h2>
             <div className="plan__steps-wrapper">
                 <svg className='plan__line' width="1304" height="448" viewBox="0 0 1304 448" fill="none" xmlns="http://www.w3.org/2000/svg">
