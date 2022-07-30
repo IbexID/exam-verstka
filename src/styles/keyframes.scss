@@ -24,6 +24,9 @@
 }
 
 @keyframes space-cover-onload {
+    0%{
+        opacity: 0;
+    }
     25%{
         opacity: 0;
     }
@@ -235,35 +238,12 @@
 
 @keyframes sign-animation {
     0% {
-        opacity: 0;
     }
 
     50% {
         opacity: 0;
         transform: scale(.8);
     }
-
-    90% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    100% {
-        opacity: 0;
-    }
-
-}
-
-@keyframes plus-sign {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-        transform: scale(.8);
-    }
-
     90% {
         opacity: 1;
         transform: scale(1);
@@ -291,7 +271,7 @@
 }
 
 @keyframes brush {
-    0% {
+    4% {
         top: 633px;
         left: 412px;
         transform: rotate(-10deg);
@@ -302,25 +282,25 @@
         transform: rotate(-10deg);
     }
 
-    30% {
+    27% {
+        top: 630px;
+        left: 425px;
+        transform: rotate(66deg);
+    }
+
+    29% {
+        top: 630px;
+        left: 425px;
+        transform: rotate(46deg);
+    }
+
+    31% {
         top: 630px;
         left: 425px;
         transform: rotate(66deg);
     }
 
     33% {
-        top: 630px;
-        left: 425px;
-        transform: rotate(46deg);
-    }
-
-    36% {
-        top: 630px;
-        left: 425px;
-        transform: rotate(66deg);
-    }
-
-    39% {
         top: 630px;
         left: 425px;
         transform: rotate(56deg);
@@ -330,60 +310,54 @@
         left: 425px;
         transform: rotate(56deg);
     }
-    63% {
+    60% {
         top: 625px;
         left: 410px;
         transform: rotate(10deg);
     }
 
-    66% {
+    62% {
         top: 623px;
         left: 410px;
         transform: rotate(-10deg);
     }
 
-    69% {
-        top: 625px;
+    64% {
+        top: 624px;
         left: 410px;
         transform: rotate(10deg);
     }
 
-    72% {
-        top: 625px;
-        left: 410px;
-        transform: rotate(0deg);
+    87% {
+        top: 627px;
+        left: 411px;
+        transform: rotate(5deg);
     }
 
-    81%{
+    94%{
         
-        top: 625px;
-        left: 410px;
-        transform: rotate(0deg);
+        top: 629px;
+        left: 411px;
+        transform: rotate(-10deg);
     }
-    91% {
+    96% {
 
-        top: 633px;
+        top: 630px;
         left: 412px;
         transform: rotate(0deg);
     }
 
-    94% {
+    98% {
 
-        top: 633px;
+        top: 630px;
         left: 412px;
-        transform: rotate(-20deg);
+        transform: rotate(3deg);
     }
 
-    97% {
-
-        top: 633px;
-        left: 412px;
-        transform: rotate(0deg);
-    }
 
     100% {
 
-        top: 633px;
+        top: 631px;
         left: 412px;
         transform: rotate(-10deg);
     }
@@ -393,22 +367,19 @@
 @keyframes flying-plane {
     0%{
         left: 50px;
-        top: 130px;
     }
     10%{
-        left: 230px;
-        top: 160px;
-        motion-offset: 0%;
-        offset-distance: 0%;
+        left: 100px;
     }
     20%{
-        left: 310px;
+        left: 150px;
         transform: rotate(0deg);
     }
     25%{
         transform: rotate(10deg);
       }
     40%{
+        left: 180px;
         transform: rotate(0deg);
       }
     60%{
@@ -418,7 +389,7 @@
         transform: rotate(10deg);
     }
     100% {
-        
+        left: 250px;
         transform: rotate(00deg);
         motion-offset: 100%;
         offset-distance: 100%;

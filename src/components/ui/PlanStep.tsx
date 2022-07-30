@@ -12,7 +12,7 @@ const PlanStep: React.FC<IPlanStep> = ({step, text, link}) => {
     const referenceLink = <a className='plan__step-link' href={link}>Здесь</a>
 
     return (
-        <div className='plan__step'>
+        <div className={`plan__step plan__step-${step}`} >
             <div className="plan__step-circle">
                 <p className="plan__step-count">{step}</p>
             </div>

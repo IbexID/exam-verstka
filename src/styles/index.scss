@@ -1,6 +1,6 @@
-@import './vars.scss';
-@import './fonts.scss';
-@import './keyframes.scss';
+@import "./vars.scss";
+@import "./fonts.scss";
+@import "./keyframes.scss";
 
 * {
   box-sizing: border-box;
@@ -27,8 +27,8 @@ a {
 
 body {
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,7 +60,7 @@ img {
   }
 
   &__label--gray {
-    color: #D6D7DD;
+    color: #d6d7dd;
   }
 
   &__input {
@@ -72,7 +72,7 @@ img {
     position: absolute;
     top: 6px;
     left: 4px;
-    background-image: url('../images/icons/checkbox-tick.svg');
+    background-image: url("../images/icons/checkbox-tick.svg");
     width: 15px;
     height: 10px;
     background-size: cover;
@@ -108,12 +108,10 @@ img {
 
 .solid-button {
   @include solid-button;
-  &--red{
+  &--red {
     @include solid-button--red;
   }
 }
-
-
 
 .transparent-button {
   @include transparent-button;
@@ -137,7 +135,7 @@ img {
 }
 
 .goal {
-  background: url('../images/participationgoal-bg.png');
+  background: url("../images/participationgoal-bg.png");
   padding: 36px 0 94px;
   display: flex;
   flex-direction: column;
@@ -166,7 +164,7 @@ img {
   }
 
   &__item-link {
-    color: #FF946E;
+    color: #ff946e;
     text-decoration: underline;
     text-decoration-skip-ink: none;
   }
@@ -178,23 +176,30 @@ img {
   align-items: center;
   margin-top: 106px;
   min-height: 907px;
-  background: url('../images/plan-bg.png');
+  background: url("../images/plan-bg.png");
   z-index: -2;
   overflow: hidden;
   position: relative;
 
-  &__steps-wrapper{
+  &__steps-wrapper {
     position: relative;
     margin-top: 86px;
     width: 1352px;
   }
-  &__steps-plane{
+  &__steps-plane {
     z-index: 3;
-    left: 300px;
+    left: 180px;
     top: 160px;
     position: absolute;
+    offset-path: path(
+      "
+      M0.5 7.5L51 1H85L131 7.5L169 13.5L201.5 21.5L234.5 32.5L297.5 57.5L357.5 86.5L505.5 169L593 220L651.5 252.5L710.5 283.5L770.5 313.5L832.5 342L868.5 357.5L924.5 379.5L965.5 394L1008 408.5L1054.5 421.5L1106 434.5L1160.5 443.5L1199.5 448.5L1235 451H1276.5L1301.5 450L1335.5 446L1370 440.5L1405 433L1429.5 426L1545 394L1606 370L1669 342
+      "
+      
+    );
+  }
+  &__plane-appear{
     animation: flying-plane 2s linear 1 forwards;
-    offset-path: path("M1 2C215.948 27.7838 428.915 227.762 757.992 359.956C980.664 449.406 1146.81 468.579 1302.12 419.969, M1304.5 419.5C1538.06 350.051 1658.28 179.316 1752.5 284");
   }
 
   &__steps {
@@ -210,6 +215,7 @@ img {
     left: 69px;
     z-index: 1;
   }
+  
 
   &__step {
     z-index: 2;
@@ -220,21 +226,29 @@ img {
     width: max-content;
     gap: 40px;
     max-width: 350px;
-    animation: appearing-plan 1s linear .25s 1 forwards;
+  }
+  &__step1-appear{
+    animation: appearing-plan 1s linear 0.25s 1 forwards;
+  }
+  &__step2-appear{
+    animation: appearing-plan 1s linear 0.75s 1 forwards;
+  }
+  &__step3-appear{
+    animation: appearing-plan 1s linear 1.25s 1 forwards;
   }
 
   &__step:nth-child(2) {
     margin: 123px 0 136px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    animation: appearing-plan 1s linear .75s 1 forwards;
+    //animation: appearing-plan 1s linear 0.75s 1 forwards;
   }
 
   &__step:nth-child(3) {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
     max-width: 388px;
-    animation: appearing-plan 1s linear 1.25s 1 forwards;
+    //animation: appearing-plan 1s linear 1.25s 1 forwards;
   }
 
   &__step-circle {
@@ -261,39 +275,39 @@ img {
   }
 }
 
-.diploma{
+.diploma {
   width: 100%;
   margin-top: -37px;
   padding: 0 265px 156px 264px;
-  background: url('../images/participationgoal-bg.png') no-repeat;
+  background: url("../images/participationgoal-bg.png") no-repeat;
   background-position: right 0px top 185px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &__info{
+  &__info {
     width: 497px;
   }
-  &__info-title{
+  &__info-title {
     margin-bottom: 27px;
     white-space: nowrap;
   }
-  &__info-text:not(:last-child){
+  &__info-text:not(:last-child) {
     margin-bottom: 30px;
   }
-  &__card-wrapper{
+  &__card-wrapper {
     transform: scale(0.808);
     transform-origin: right;
   }
-  &__card{
+  &__card {
     position: relative;
     width: 842px;
     height: 595px;
-    background: linear-gradient(90deg, #6693B4 0%, #8FEFEA 100%);
+    background: linear-gradient(90deg, #6693b4 0%, #8fefea 100%);
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  &__card-underlay{
+  &__card-underlay {
     background: $mainWhite;
     width: 794px;
     height: 551px;
@@ -304,54 +318,54 @@ img {
     gap: 20px;
     z-index: 2;
   }
-  &__card-title{
+  &__card-title {
     @include h1-diploma-font;
   }
-  &__card-subtitle{
+  &__card-subtitle {
     @include h4-diploma-font;
   }
-  &__card-name{
+  &__card-name {
     @include diploma-name-font;
     width: 100%;
     border-bottom: 2px solid $mainGreen;
-    border-radius: 1px
+    border-radius: 1px;
   }
-  &__card-place{
+  &__card-place {
     @include diploma-place-font;
   }
-  &__card-category{
+  &__card-category {
     @include diploma-text-font;
     margin-bottom: 45px;
     white-space: pre-wrap;
   }
-  &__card-date{
+  &__card-date {
     @include diploma-text-font;
   }
-  &__card-image{
+  &__card-image {
     position: absolute;
   }
-  &__card-logo{
+  &__card-logo {
     z-index: 2;
     left: 64px;
     bottom: 77px;
   }
-  &__card-print{
+  &__card-print {
     bottom: 37px;
     right: 57px;
     transform: rotate(16deg);
     z-index: 2;
   }
-  &__card-water{
+  &__card-water {
     right: 0;
     bottom: 0;
   }
-  &__card-clouds{
+  &__card-clouds {
     top: 49px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 2;
   }
-  &__card-tree{
+  &__card-tree {
     left: 0;
     bottom: 0;
     z-index: 2;
@@ -370,7 +384,6 @@ img {
   }
 
   &__pad-time {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -428,7 +441,7 @@ img {
   &__space {
     position: relative;
   }
-  &__space-bg{
+  &__space-bg {
     opacity: 0;
     animation: space-cover-onload 2s linear 0.5s 1 forwards;
   }
@@ -450,11 +463,11 @@ img {
   }
 
   &__num--yellow {
-    color: #FCC947;
+    color: #fcc947;
   }
 
   &__num--pink {
-    color: #E075AD;
+    color: #e075ad;
   }
 
   &__num-zero {
@@ -537,79 +550,92 @@ img {
   &__atom {
     left: 93px;
     top: 136px;
-    animation: atom 12s linear .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: atom 12s linear 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__planet {
     top: 465px;
     left: 335px;
-    animation: planet 12s linear .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: planet 12s linear 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__planet-2 {
     top: 138px;
     left: 445px;
-    animation: planet-2 12s ease .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: planet-2 12s ease 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__planet-3 {
     top: 86px;
     left: 227px;
-    animation: planet-3 12s ease .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: planet-3 12s ease 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__clock {
     top: 224px;
     left: 136px;
-    animation: clock 12s ease-in-out .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: clock 12s ease-in-out 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__rocket {
     top: 357px;
     left: 106px;
-    animation: rocket 12s ease-out .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: rocket 12s ease-out 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__balloon {
     top: 300px;
     left: 372px;
-    animation: balloon 12s ease .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: balloon 12s ease 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__lightbulb {
     top: 331px;
     left: 482px;
-    animation: lightbulb 12s ease-in-out .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: lightbulb 12s ease-in-out 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__elephant {
     top: 229px;
     left: 595px;
-    animation: elephant 12s ease .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: elephant 12s ease 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__airplane {
     top: 333px;
     left: 736px;
-    animation: airplane 12s linear .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: airplane 12s linear 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__division-sign {
     top: 189px;
     left: 533px;
-    animation: sign-animation 12s linear infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    opacity: 0;
+    animation: sign-animation 12s linear 2s infinite;
   }
 
   &__plus-sign {
+    opacity: 0;
     top: 245px;
     left: 450px;
-    animation: sign-animation 12s linear 6s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: sign-animation 12s linear 8s infinite;
   }
 
   &__palette {
     top: 123px;
     left: 739px;
-    animation: palette 12s linear .5s infinite, space-cover-onload 2s linear 0.5s 1 forwards;
+    animation: palette 12s linear 0.5s infinite,
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__planes {
@@ -628,9 +654,9 @@ img {
 
   &__brush {
     opacity: 1 !important;
-    top: 625px;
-    left: 410px;
-    transform: rotate(0deg);
+    top: 633px;
+    left: 412px;
+    transform: rotate(-10deg);
     z-index: -2;
     animation: brush 4.5s linear infinite forwards;
   }
@@ -666,7 +692,7 @@ img {
   }
 }
 
-.social-icon{
+.social-icon {
   background-color: $mainWhite;
   border: 1px solid $mainWhite;
   border-radius: 10px;
@@ -683,16 +709,16 @@ img {
   }
 }
 
-.expand-button{
+.expand-button {
   height: 48px;
   width: 48px;
   background-color: $mainOrange;
   border-radius: 50%;
   position: relative;
   &::after,
-  &::before{
+  &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 2px;
     height: 21px;
     background-color: $mainWhite;
@@ -701,42 +727,42 @@ img {
     transform: translate(-50%, -50%);
     border-radius: 1px;
   }
-  &::before{
+  &::before {
     transform: translate(-50%, -50%) rotate(90deg);
   }
 }
 
-.register{
+.register {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 287px 0 264px;
   margin-bottom: 200px;
-  &__title{
+  &__title {
     margin-bottom: 50px;
   }
-  &__form{
+  &__form {
     width: 658px;
   }
-  &__inputs-wrapper{
+  &__inputs-wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 52px;
   }
-  &__form-bottom{
+  &__form-bottom {
     display: flex;
     align-items: center;
     margin-top: 50px;
     padding-bottom: 19px;
     position: relative;
   }
-  &__form-planes{
+  &__form-planes {
     position: absolute;
     bottom: 0;
     right: 33px;
   }
-  &__banner{
+  &__banner {
     width: 490px;
     height: 476px;
     border-radius: 40px;
@@ -747,42 +773,42 @@ img {
     flex-direction: column;
     align-items: center;
   }
-  &__banner-flag{
+  &__banner-flag {
     position: absolute;
     left: 50%;
     top: -17px;
     transform: translate(-50%, 0);
   }
-  &__banner-name{
+  &__banner-name {
     position: absolute;
     left: 50%;
     top: 7px;
     transform: translate(-50%, 0);
     @include banner-text;
   }
-  &__banner-content{
+  &__banner-content {
     padding: 136px 60px 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  &__banner-text{
+  &__banner-text {
     white-space: nowrap;
   }
-  &__banner-prices{
+  &__banner-prices {
     display: flex;
     align-items: flex-start;
     gap: 12px;
   }
-  &__banner-old{
+  &__banner-old {
     @include banner-old-price;
     margin-top: 16px;
     text-decoration: line-through;
   }
-  &__banner-new{
+  &__banner-new {
     @include banner-new-price;
   }
-  &__banner-bottom{
+  &__banner-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -792,34 +818,32 @@ img {
     background: $mainGreen;
     @include banner-text;
   }
-  &__banner-socials{
+  &__banner-socials {
     display: flex;
     gap: 18px;
   }
 }
 
-.questions{
+.questions {
   padding: 0 258px 0 262px;
-  &__title{
+  &__title {
     margin-bottom: 50px;
     text-align: center;
   }
-  &__item{
+  &__item {
     padding: 21px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid $mainBlack;
   }
-  &__item:first-of-type{
+  &__item:first-of-type {
     padding: 31px 0;
     border-top: 1px solid $mainBlack;
   }
-  &__text{
-
+  &__text {
   }
 }
-
 
 .subscription {
   margin-top: 200px;
@@ -836,7 +860,8 @@ img {
     border-radius: 81px;
     height: 100%;
     max-width: 1680px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/subscription-bg.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/subscription-bg.png");
   }
 
   &__title {
