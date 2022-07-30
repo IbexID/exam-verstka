@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import PlanStep from "./ui/PlanStep";
 
 const Plan: React.FC = () => {
+
   const onStepsAppearInView = (steps: any) => {
     steps.forEach((step: any) => {
       if (step.isIntersecting) {
@@ -20,14 +21,13 @@ const Plan: React.FC = () => {
   const onPlaneAppearInView = (planes: any) => {
     planes.forEach( (plane: any) => {
         if (plane.isIntersecting){
-            console.log(plane);
             plane.target.classList.add("plan__plane-appear");
         }
     })
     
   };
 
-  useEffect(() => {
+  const createAnimationOnAppear = () =>{
     const planeObserver = new IntersectionObserver(onPlaneAppearInView, {
       threshold: [0.5],
     });
@@ -43,7 +43,10 @@ const Plan: React.FC = () => {
     for (let plane of planes){
         planeObserver.observe(plane);
     }
-    
+  }
+
+  useEffect(() => {
+    createAnimationOnAppear()    
   }, []);
 
   const planSteps = [

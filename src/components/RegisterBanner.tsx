@@ -21,7 +21,7 @@ const RegisterBanner: React.FC<IRegisterBannerProps> = ({ newPrice, oldPrice }) 
                 <p className="register__banner-text paragraph--medium">Стоимость участия:</p>
                 <div className="register__banner-prices">
                     <p className="register__banner-new">{newPrice}₽</p>
-                    <p className="register__banner-old">{oldPrice}₽</p>
+                    <p className="register__banner-old">{oldPrice} ₽</p>
                 </div>
                 <p className="register__banner-text paragraph--medium">При наличии репоста в соцсетях :)</p>
             </div>

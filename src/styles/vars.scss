@@ -64,6 +64,15 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
     color: $lightGray;
 }
 
+@mixin checkbox-font{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: $lightGray;
+}
+
 @mixin diploma-name-font {
     font-family: 'Vollkorn';
     font-weight: 500;
@@ -164,7 +173,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     color: $mainBlack;
 }
 @mixin banner-text {
@@ -260,7 +269,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
     position: absolute;
     width: 19px;
     height: 19px;
-    top: 2px;
+    top: 3px;
     left: 2px;
 
     &::before {
