@@ -1,16 +1,7 @@
-$mainWhite: #ffffff;
-$mainGreen: #14a76c;
-$mainOrange: #FF652F;
-$mainRed: #E02D05;
-$mainViolet: linear-gradient(326.12deg, #5D77FF 17.95%, #6539C1 89.78%);
-$mainBlack: #1f1d2a;
-$mainGray: #4f5569;
-$lightGray: #9fa0a7;
-$paleGreenShadow: rgba(20, 167, 114, 0.2);
-
+/* @import './vars.scss'; */
 
 @mixin h1-font {
-    font-family: 'Nunito';
+    font-family: $titleFontFamily;
     font-weight: 700;
     font-size: 55px;
     line-height: 67px;
@@ -18,7 +9,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin h1-diploma-font {
-    font-family: 'Vollkorn';
+    font-family: $diplomaFontFamily;
     font-weight: 400;
     font-size: 60px;
     line-height: 73px;
@@ -28,7 +19,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin h2-font {
-    font-family: 'Nunito';
+    font-family: $titleFontFamily;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -37,7 +28,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin h4-diploma-font {
-    font-family: 'Vollkorn';
+    font-family: $diplomaFontFamily;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -48,7 +39,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin logo-font {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
@@ -56,7 +47,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin subtext {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -65,7 +56,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin checkbox-font{
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
@@ -74,7 +65,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin diploma-name-font {
-    font-family: 'Vollkorn';
+    font-family: $diplomaFontFamily;
     font-weight: 500;
     font-size: 35px;
     line-height: 39px;
@@ -83,7 +74,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
     color: $mainBlack;
 }
 @mixin diploma-place-font {
-    font-family: 'Vollkorn';
+    font-family: $diplomaFontFamily;
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
@@ -92,7 +83,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
     color: $mainGreen;
 }
 @mixin diploma-text-font {
-    font-family: 'Vollkorn';
+    font-family: $diplomaFontFamily;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -111,7 +102,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin plan-step-font {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
@@ -119,7 +110,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin plan-link-font {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -142,7 +133,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin paragraph-large {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 22px;
     line-height: 33px;
@@ -151,7 +142,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin paragraph-medium {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -160,7 +151,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin paragraph-small {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -169,7 +160,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin nav-menu-text {
-    font-family: 'Nunito';
+    font-family: $titleFontFamily;
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
@@ -181,14 +172,14 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
     color: $mainWhite;
 }
 @mixin banner-old-price{
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 500;
     font-size: 30px;
     line-height: 36px;
     color: $mainBlack;
 }
 @mixin banner-new-price{
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 96px;
     line-height: 114px;
@@ -201,7 +192,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin timer-pad-time {
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -211,7 +202,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin timer-colon {
-    font-family: 'Nunito';
+    font-family: $titleFontFamily;
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -221,7 +212,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 }
 
 @mixin timer-text {
-    font-family: 'Nunito';
+    font-family: $titleFontFamily;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -234,7 +225,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
     width: 100%;
     max-width: 360px;
     padding: 18px 75px;
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -252,7 +243,7 @@ $paleGreenShadow: rgba(20, 167, 114, 0.2);
 
 @mixin transparent-button {
     padding: 10px 59px;
-    font-family: 'Rubik';
+    font-family: $commonFontFamily;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;

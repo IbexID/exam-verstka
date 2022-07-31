@@ -7,6 +7,7 @@ import Plan from "./components/Plan";
 import Diploma from "./components/Diploma";
 import Register from "./components/Register";
 import Questions from "./components/Questions";
+import './styles/index.scss';
 
 
 function App() {
