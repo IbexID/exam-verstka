@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                         <FooterNavLink text='Конфиденциальность' />
                     </ul>
                 </nav>
-                <p className='footer__content-copyright'>@ Все права защищены.  ООО”Слонум” 2022</p>
+                <p className='footer__content-copyright'>@ Все права защищены.&nbsp; ООО”Слонум” 2022</p>
             </div>
             <div className="footer__up">
                 <p className="footer__up-info">Наверх</p>

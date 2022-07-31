@@ -271,12 +271,12 @@
   4% {
     top: 633px;
     left: 412px;
-    transform: rotate(-10deg);
+    transform: rotate(24deg);
   }
   20% {
     top: 633px;
     left: 412px;
-    transform: rotate(-10deg);
+    transform: rotate(24deg);
   }
 
   27% {
@@ -380,7 +380,7 @@
     transform: rotate(10deg);
   }
   100% {
-    left: 250px;
+    left: 285px;
     transform: rotate(00deg);
     motion-offset: 100%;
     offset-distance: 100%;
@@ -397,7 +397,7 @@
     offset-distance: 80%;
     offset-position: 80%;
   }
-  85%{
+  75%{
     transform: rotateY(180deg) rotateZ(170deg);
 
     right: 246px;
@@ -406,7 +406,7 @@
     offset-position: 80%;
   }
   
-  98% {
+  96% {
     transform: rotateY(180deg) rotateZ(165deg);
     right: 315px;
     bottom: 175px;

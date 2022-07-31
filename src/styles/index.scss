@@ -178,16 +178,19 @@ img {
   flex-direction: column;
   align-items: center;
   margin-top: 106px;
-  min-height: 907px;
+  min-height: 807px;
   background: url("../images/plan-bg.png");
   z-index: -2;
   overflow: hidden;
   position: relative;
 
+  &__title{
+    
+  }
   &__steps-wrapper {
     position: relative;
     margin-top: 86px;
-    width: 1352px;
+    width: 1365px;
   }
   &__steps-plane {
     z-index: 3;
@@ -281,7 +284,7 @@ img {
 .diploma {
   width: 100%;
   margin-top: -37px;
-  padding: 0 265px 156px 264px;
+  padding: 6px 266px 144px 247px;
   background: url("../images/participationgoal-bg.png") no-repeat;
   background-position: right 0px top 185px;
   display: flex;
@@ -298,6 +301,7 @@ img {
     margin-bottom: 30px;
   }
   &__card-wrapper {
+    margin-top: -5px;
     transform: scale(0.808);
     transform-origin: right;
   }
@@ -338,23 +342,24 @@ img {
   }
   &__card-category {
     @include diploma-text-font;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     white-space: pre-wrap;
   }
   &__card-date {
     @include diploma-text-font;
+    margin-bottom: 2px;
   }
   &__card-image {
     position: absolute;
   }
   &__card-logo {
     z-index: 2;
-    left: 64px;
-    bottom: 77px;
+    left: 66px;
+    bottom: 75px;
   }
   &__card-print {
-    bottom: 37px;
-    right: 57px;
+    bottom: 35px;
+    right: 56px;
     transform: rotate(16deg);
     z-index: 2;
   }
@@ -416,7 +421,9 @@ img {
   display: flex;
   align-items: center;
   gap: 5px;
-
+  &__img{
+    margin-bottom: 5px;
+  }
   &__text {
     @include logo-font;
   }
@@ -623,15 +630,14 @@ img {
   &__division-sign {
     top: 189px;
     left: 533px;
-    opacity: 0;
-    animation: sign-animation 12s linear 2s infinite;
+    animation: sign-animation 12s linear -4s infinite;
   }
 
   &__plus-sign {
     opacity: 0;
     top: 245px;
     left: 450px;
-    animation: sign-animation 12s linear 8s infinite;
+    animation: sign-animation 12s linear 2s infinite;
   }
 
   &__palette {
@@ -667,14 +673,14 @@ img {
   &__top {
     width: 100%;
     display: flex;
-    padding-top: 30px;
-    padding-right: 262px;
+    padding-top: 31px;
+    padding-right: 247px;
     justify-content: space-between;
     overflow: hidden;
   }
 
   &__info {
-    margin: 248px 0 60px;
+    margin: 242px 0 60px;
     display: flex;
     flex-direction: column;
     max-width: 650px;
@@ -691,7 +697,7 @@ img {
 
   &__bottom {
     display: flex;
-    gap: 60px;
+    gap: 72px;
   }
 }
 
@@ -852,28 +858,28 @@ img {
     animation: register-flying-plane 2s ease-out .8s 1 forwards;
   }
   &__move-plane-1{
-    animation: move-plane-one .25s ease 2.6s 1 forwards;
+    animation: move-plane-one .25s ease 2.5s 1 forwards;
   }
   &__move-plane-2{
-    animation: move-plane-two .25s ease 2.6s 1 forwards;
+    animation: move-plane-two .25s ease 2.5s 1 forwards;
   }
 }
 
 .questions {
-  padding: 0 258px 0 262px;
+  padding: 0 242px 0 262px;
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     text-align: center;
   }
   &__item {
-    padding: 21px 0;
+    padding: 21px 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid $mainBlack;
   }
   &__item:first-of-type {
-    padding: 31px 0;
+    padding: 31px 0 30px;
     border-top: 1px solid $mainBlack;
   }
   &__text {
@@ -894,7 +900,7 @@ img {
     padding: 30px 0 67px;
     border-radius: 81px;
     height: 100%;
-    max-width: 1680px;
+    width: 1680px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../images/subscription-bg.png");
   }
@@ -906,28 +912,32 @@ img {
   &__text {
     color: $mainWhite;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__top {
     width: 930px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     display: flex;
     gap: 30px;
+  }
+  &__form{
+    margin-left: 108px;
   }
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 70px 223px 64px 265px;
+  padding: 70px 238px 64px 265px;
 
   &__social {
     display: grid;
-    row-gap: 9px;
-    column-gap: 22px;
+    row-gap: 8px;
+    column-gap: 19px;
     width: 147px;
     justify-items: center;
-    grid-template: auto / 1fr 1fr 1fr;
+    grid-template: 27px / 1fr 1fr 1fr;
   }
 
   &__social-info {
@@ -961,6 +971,9 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 49px;
+    margin-top: 22px;
+    margin-right: 84px;
+    width: max-content;
   }
 
   &__links-list {

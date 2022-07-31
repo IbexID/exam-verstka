@@ -7,9 +7,9 @@ interface ITimer {
 
 const Timer: React.FC<ITimer> = ({ date }) => {
 
-    const [minutes, setMinutes] = useState('00')
-    const [hours, setHours] = useState('00')
-    const [days, setDays] = useState('00')
+    const [minutes, setMinutes] = useState('43')
+    const [hours, setHours] = useState('09')
+    const [days, setDays] = useState('01')
 
     const setTime = () => {
         setInterval(() => {

@@ -11,7 +11,7 @@ const Diploma: React.FC = () => {
                 <p className='diploma__info-text paragraph--small'>Со слоном к победам напролом!</p>
             </div>
             <div className="diploma__card-wrapper">
-                <DiplomaCard name='Гасенко Алина' place='I' category='во Всероссийском конкурсе детских рисунков &#10;«Моё счастливое лето»&#10;Возраст от 0 до 4 лет, г. Калуга' date='15.08.2022' />
+                <DiplomaCard name='Гасенко Алина' place='1' category='во Всероссийском конкурсе детских рисунков &#10;«Моё счастливое лето»&#10;Возраст от 0 до 4 лет, г. Калуга' date='15.08.2022' />
             </div>
         </article>
     );
