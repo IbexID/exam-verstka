@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.67e0b907.css",
+    "main.js": "/static/js/main.3b70fff9.js",
+    "static/media/subscription-bg.png": "/static/media/subscription-bg.f2d772acbbabd0eb5f2a.png",
+    "static/media/participationgoal-bg.png": "/static/media/participationgoal-bg.02eec00e6de86dea3b96.png",
+    "static/media/plan-bg.png": "/static/media/plan-bg.4eb7ef9abc2d89ac8b88.png",
+    "static/media/cover-girl.png": "/static/media/cover-girl.a414a65d55833b77eedf.png",
+    "static/media/diploma-print.png": "/static/media/diploma-print.74e5aa9bcf9f97386cfa.png",
+    "static/media/diploma-water-n-sand.png": "/static/media/diploma-water-n-sand.c35a93a49c06a1908f76.png",
+    "static/media/diploma-tree-n-eleph.png": "/static/media/diploma-tree-n-eleph.bcb6aeff3e59559fb9af.png",
+    "static/media/contest-item-3.png": "/static/media/contest-item-3.8a2b3d804ef0b3511362.png",
+    "static/media/contest-item-6.png": "/static/media/contest-item-6.2adf8fbb3b3c0fc26b8f.png",
+    "static/media/cover-balloon.png": "/static/media/cover-balloon.b8343a7aac3c7079eeeb.png",
+    "index.html": "/index.html",
+    "static/media/checkbox-tick.svg": "/static/media/checkbox-tick.1ef455351cd1a2c41c9c.svg",
+    "static/media/footer-up.svg": "/static/media/footer-up.d2be3a8efa38f89dd5770f96f12fdac1.svg",
+    "main.67e0b907.css.map": "/static/css/main.67e0b907.css.map",
+    "main.3b70fff9.js.map": "/static/js/main.3b70fff9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67e0b907.css",
+    "static/js/main.3b70fff9.js"
+  ]
+}
