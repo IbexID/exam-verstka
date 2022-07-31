@@ -36,53 +36,43 @@
 
 @keyframes atom {
   0% {
-    transform: rotate(-20deg) scale(0);
+    transform: rotate(0deg) scale(0);
   }
-
-  20% {
-    transform: rotate(-17deg) scale(0.3);
-  }
-
-  40% {
-    transform: rotate(-7deg) scale(0.7);
-  }
-
   50% {
-    transform: rotate(0deg) scale(1);
-  }
-
-  60% {
-    transform: rotate(7deg) scale(0.7);
-  }
-
-  80% {
-    transform: rotate(17deg) scale(0.3);
+    animation-timing-function: ease-in;
+    transform: rotate(45deg) scale(1);
   }
 
   100% {
-    transform: rotate(20deg) scale(0);
+    animation-timing-function: ease-in;
+    transform: rotate(0deg) scale(0);
   }
 }
 
 @keyframes lightbulb {
-  0% {
-    transform: rotate(15deg);
-  }
-
   11% {
     transform: rotate(15deg);
   }
 
-  40% {
+  
+  30% {
     transform: rotate(40deg);
   }
+  35% {
+    transform: rotate(40deg);
+  }
+  47%{
+    transform: rotate(15deg)
+  }
 
-  69% {
+  75% {
+    transform: rotate(-45deg);
+  }
+  79% {
     transform: rotate(-45deg);
   }
 
   86% {
-    transform: rotate(20deg);
   }
 
   100% {
@@ -91,106 +81,100 @@
 }
 
 @keyframes clock {
-  0% {
+  4% {
     transform: rotate(0deg) scale(0.7);
   }
 
   50% {
     transform: rotate(-180deg) scale(1);
   }
+  58% {
+    transform: rotate(-208deg) scale(1);
+  }
 
-  100% {
+  96% {
     transform: rotate(-360deg) scale(0.7);
   }
 }
 
 @keyframes rocket {
-  10% {
-    top: 357px;
+  11% {
+    top: 416px;
   }
 
+  50% {
+    top: 366px;
+  }
   67% {
-    top: 287px;
+    top: 366px;
   }
 
   100% {
-    top: 357px;
-  }
-}
-
-@keyframes planet-3 {
-  15% {
-    top: 86px;
-    left: 227px;
-  }
-
-  30% {
-    top: 110px;
-    left: 187px;
-  }
-
-  70% {
-    top: 110px;
-    left: 187px;
-  }
-
-  85% {
-    top: 86px;
-    left: 227px;
-  }
-}
-
-@keyframes planet-2 {
-  15% {
-    left: 445px;
-  }
-
-  40% {
-    left: 485px;
-  }
-
-  60% {
-    left: 485px;
-  }
-
-  85% {
-    left: 445px;
+    top: 416px;
   }
 }
 
 @keyframes planet {
-  15% {
+  0% {
     transform: rotate(0deg);
   }
 
-  40% {
-    transform: rotate(-30deg);
+  50% {
+    transform: rotate(-45deg);
   }
 
-  60% {
-    transform: rotate(-30deg);
-  }
-
-  85% {
+  100% {
     transform: rotate(0deg);
   }
 }
 
-@keyframes balloon {
-  15% {
-    top: 300px;
+@keyframes planet-2 {
+  6% {
+    left: 445px;
   }
 
   40% {
-    top: 340px;
+    left: 475px;
   }
 
-  60% {
-    top: 340px;
+  56% {
+    left: 475px;
   }
 
-  85% {
+  100% {
+    left: 445px;
+  }
+}
+
+@keyframes planet-3 {
+  0% {
+    top: 86px;
+    left: 227px;
+  }
+
+  50% {
+    top: 106px;
+    left: 197px;
+  }
+
+
+  100% {
+    top: 86px;
+    left: 227px;
+  }
+}
+
+@keyframes balloon {
+  0% {
+    top: 334px;
+  }
+
+  50% {
     top: 300px;
+  }
+
+  100% {
+    top: 334px;
   }
 }
 
@@ -199,7 +183,10 @@
     transform: rotate(0deg);
   }
 
-  40% {
+  25% {
+    transform: rotate(0deg);
+  }
+  83% {
     transform: rotate(360deg);
   }
 
@@ -236,20 +223,23 @@
 }
 
 @keyframes sign-animation {
-  0% {
+  0%{
+    transform: scale(0.5);
+    opacity: 0;
   }
-
+  
   50% {
     opacity: 0;
-    transform: scale(0.8);
   }
+
   90% {
     opacity: 1;
     transform: scale(1);
+    animation-timing-function: ease-in;
   }
-
-  100% {
+  100%{
     opacity: 0;
+    transform: scale(1.2);
   }
 }
 
@@ -268,6 +258,47 @@
 }
 
 @keyframes brush {
+  0% {
+    top: 633px;
+    left: 412px;
+    transform: rotate(24deg);
+  }
+  
+  27% {
+    top: 628px;
+    left: 421px;
+    transform: rotate(66deg);
+  }
+  33% {
+    top: 628px;
+    left: 421px;
+    transform: rotate(66deg);
+  }
+  
+  60% {
+    top: 624px;
+    left: 412px;
+    transform: rotate(0deg);
+  }
+  66% {
+    top: 624px;
+    left: 412px;
+    transform: rotate(0deg);
+  }
+
+  
+  94% {
+    top: 631px;
+    left: 412px;
+    transform: rotate(24deg);
+  }
+  100% {
+    top: 631px;
+    left: 412px;
+    transform: rotate(24deg);
+  }
+}
+/* @keyframes brush {
   4% {
     top: 633px;
     left: 412px;
@@ -353,7 +384,7 @@
     left: 412px;
     transform: rotate(-10deg);
   }
-}
+} */
 
 @keyframes plan-flying-plane {
   0% {

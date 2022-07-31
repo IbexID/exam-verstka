@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import RegisterBanner from "./RegisterBanner";
 import RegisterForm from "./RegisterForm";
 

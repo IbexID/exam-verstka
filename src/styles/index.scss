@@ -184,9 +184,6 @@ img {
   overflow: hidden;
   position: relative;
 
-  &__title{
-    
-  }
   &__steps-wrapper {
     position: relative;
     margin-top: 86px;
@@ -560,14 +557,14 @@ img {
   &__atom {
     left: 93px;
     top: 136px;
-    animation: atom 12s linear 0.5s infinite,
+    animation: atom 12s ease-out 0.5s infinite,
       space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__planet {
     top: 465px;
     left: 335px;
-    animation: planet 12s linear 0.5s infinite,
+    animation: planet 12s ease 0.5s infinite,
       space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
@@ -588,12 +585,13 @@ img {
   &__clock {
     top: 224px;
     left: 136px;
-    animation: clock 12s ease-in-out 0.5s infinite,
+    transform:scale(0.7);
+    animation: clock 12s linear 0.5s infinite,
       space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__rocket {
-    top: 357px;
+    top: 416px;
     left: 106px;
     animation: rocket 12s ease-out 0.5s infinite,
       space-cover-onload 2s linear 0.5s 1 forwards;
@@ -609,8 +607,9 @@ img {
   &__lightbulb {
     top: 331px;
     left: 482px;
-    animation: lightbulb 12s ease-in-out 0.5s infinite,
-      space-cover-onload 2s linear 0.5s 1 forwards;
+    transform: rotate(15deg);
+    animation: lightbulb 12s ease 0.5s infinite forwards,
+     space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__elephant {
@@ -623,27 +622,30 @@ img {
   &__airplane {
     top: 333px;
     left: 736px;
-    animation: airplane 12s linear 0.5s infinite,
+    animation: airplane 12s ease-in-out 0.5s infinite,
       space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__division-sign {
     top: 189px;
     left: 533px;
-    animation: sign-animation 12s linear -4s infinite;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: sign-animation 12s ease-out -4.5s infinite;
   }
 
   &__plus-sign {
     opacity: 0;
+    transform: scale(0.5);
     top: 245px;
     left: 450px;
-    animation: sign-animation 12s linear 2s infinite;
+    animation: sign-animation 12s ease-out 1.5s infinite;
   }
 
   &__palette {
     top: 123px;
     left: 739px;
-    animation: palette 12s linear 0.5s infinite,
+    animation: palette 12s ease-in-out 0.5s infinite,
       space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
@@ -663,11 +665,12 @@ img {
 
   &__brush {
     opacity: 1 !important;
+    /* top: 633px;
+    left: 412px; */
     top: 633px;
     left: 412px;
-    transform: rotate(-10deg);
     z-index: -2;
-    animation: brush 4.5s linear infinite forwards;
+    animation: brush 4.5s cubic-bezier(1, -0.45, 0.74, 2.12) infinite forwards;
   }
 
   &__top {
@@ -881,8 +884,6 @@ img {
   &__item:first-of-type {
     padding: 31px 0 30px;
     border-top: 1px solid $mainBlack;
-  }
-  &__text {
   }
 }
 
