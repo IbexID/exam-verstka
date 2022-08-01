@@ -12,6 +12,7 @@ const QuestionItem: React.FC<IQuestionItemProps> = ({question, answer}) => {
         <div className='questions__item'>
             <p className='questions__text paragraph--medium'>{question}</p>
             <ExpandButton />
+            <p className='questions__text paragraph--small'>{answer}</p>
         </div>
     );
 };

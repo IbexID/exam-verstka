@@ -1,14 +1,15 @@
 import React from 'react';
 
 interface ITimerPad{
-    time: any;
+    time: string;
     type: string;
 }
 
 const TimerPad: React.FC<ITimerPad> = ({time, type}) => {
 
-    function declensionNum(num: number, words: string[]) {
-        return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+    function declensionNum(num: string, words: string[]) {
+        const parsedNum = parseInt(num)
+        return words[(parsedNum % 100 > 4 && parsedNum % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(parsedNum % 10 < 5) ? parsedNum % 10 : 5]];
       }
     const determineTimeText = (type: string) =>{
         let timeText: string;
