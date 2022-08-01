@@ -12,7 +12,7 @@ $commonFontFamily: "Calibri";
 $diplomaFontFamily: "Arial";
 
 [data-theme="alternative"] {
-  :root{
+  
     --primary-white-color: #{$mainWhite};
     --primary-green-color: #{$mainGreen};
     --primary-orange-color: #{$mainOrange};
@@ -25,5 +25,5 @@ $diplomaFontFamily: "Arial";
     --title-font-family: #{$titleFontFamily};
     --common-font-family: #{$commonFontFamily};
     --diploma-font-family: #{$diplomaFontFamily};
-  }
+  
 }

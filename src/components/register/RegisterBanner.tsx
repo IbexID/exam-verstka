@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import SocialIcon from '../ui/SocialIcon'
 
 interface IRegisterBannerProps {
-  oldPrice: number
-  newPrice: number
+  oldPrice: number;
+  newPrice: number;
 }
 
 const RegisterBanner: React.FC<IRegisterBannerProps> = ({ newPrice, oldPrice }) => {

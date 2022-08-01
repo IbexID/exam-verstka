@@ -10,6 +10,8 @@ import Register from '../components/register/Register'
 import Subscription from '../components/Subscription'
 
 const IndexAlt: React.FC = () => {
+  console.log('hi');
+  
   return (
     <div
       className='App'
