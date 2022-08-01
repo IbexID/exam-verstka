@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+# Задание по верстке
+### 1. Верстка. Необходимо сверстать в макет. Что необходимо при этом учесть, на что будет обращаться внимание.
+##### 1.1. Корректность именования компонентов, переменных и прочего. Крайне важно уметь применять понятные названия, чтобы код можно было читать как книгу.
+##### 1.2. Возможность повторного использования кода. Легкость массовых изменений и прочего. Для этого ВАЖНО - дополнительная подзадача. Цвета и шрифты, используемые в сайте должна быть возможность поменять в одном месте для всего сайта.
+При именовании глобальных переменных цветов и шрифтов для этого следует использовать названия, которые не зависят от положения элемента на странице.
+Для глобальных переменных плохими названиями будут: footerColor, rightColumnFont. Хорошими: mainColor (основной цвет), mainAccentColor (основной цвет акцентов), additionalAccentColor (дополнительный цвет акцентов), headersFont (шрифт заголовков), commonFont (общеупотребимый шрит).
+Определенные переменные могут задаваться из других переменных. Например, buttonsColor = $mainAccentColor.
+Как видите, пункт 1.2. тесно связан с 1.1.
+##### 1.3. При программировании используем React + Typescript. Большое внимание при проверке будет уделяться тому, как вы делите код на компоненты. Чем более мелкое дробление и чем большее повторное использование кода, тем лучше.
+##### 1.4. Для того, чтобы проверить работоспособность пункта 1.2. создайте 2 файла с базовыми переменными. И в одном из url открытия сайта используйте основной, а в другом - дополнительный базовый файл с переменными. Чтобы по второму url цвета и шрифты стали совсем другими (например, синяя + красная расцветка с любыми другими шрифтами).
+##### 1.5. В макетах присутсвуют некоторые грамматические ошибки. Если заметите и исправите, также будет являться преимуществом.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Материалы для верстки:
+https://www.figma.com/file/v4M0U8RHpqDCSGBQDqsm2s/%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%BE%D0%B2?node-id=0%3A49
+https://interesting-lantana-2b5.notion.site/f3418642c3974a2faecac988c1354d80
