@@ -1,0 +1,29 @@
+$mainWhite: #dbec41;
+$mainGreen: #36b884;
+$mainOrange: #4d9c1e;
+$mainRed: #581f12;
+$mainViolet: linear-gradient(326.12deg, #5261ad 17.95%, #39128f 89.78%);
+$mainBlack: #1d2480;
+$mainGray: #44b673;
+$lightGray: #8d8d94;
+$paleGreenShadow: rgba(67, 109, 93, 0.2);
+$titleFontFamily: "Tahoma";
+$commonFontFamily: "Calibri";
+$diplomaFontFamily: "Arial";
+
+[data-theme="alternative"] {
+  :root{
+    --primary-white-color: #{$mainWhite};
+    --primary-green-color: #{$mainGreen};
+    --primary-orange-color: #{$mainOrange};
+    --primary-red-color: #{$mainRed};
+    --primary-violet-color: #{$mainViolet};
+    --primary-black-color: #{$mainBlack};
+    --primary-gray-color: #{$mainGray};
+    --primary-light-gray-color: #{$lightGray};
+    --primary-pale-green-color: #{$paleGreenShadow};
+    --title-font-family: #{$titleFontFamily};
+    --common-font-family: #{$commonFontFamily};
+    --diploma-font-family: #{$diplomaFontFamily};
+  }
+}

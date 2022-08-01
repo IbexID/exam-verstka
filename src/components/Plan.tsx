@@ -3,9 +3,8 @@ import { useEffect } from "react";
 import PlanStep from "./ui/PlanStep";
 
 const Plan: React.FC = () => {
-
-  const onStepsAppearInView = (steps: any) => {
-    steps.forEach((step: any) => {
+  const onStepsAppearInView = (steps: IntersectionObserverEntry[]) => {
+    steps.forEach((step: IntersectionObserverEntry) => {
       if (step.isIntersecting) {
         if (step.target.classList.contains("plan__step-1")) {
           step.target.classList.add("plan__step1-appear");
@@ -18,16 +17,15 @@ const Plan: React.FC = () => {
     });
   };
 
-  const onPlaneAppearInView = (planes: any) => {
-    planes.forEach( (plane: any) => {
-        if (plane.isIntersecting){
-            plane.target.classList.add("plan__plane-appear");
-        }
-    })
-    
+  const onPlaneAppearInView = (planes: IntersectionObserverEntry[]) => {
+    planes.forEach((plane: IntersectionObserverEntry) => {
+      if (plane.isIntersecting) {
+        plane.target.classList.add("plan__plane-appear");
+      }
+    });
   };
 
-  const createAnimationOnAppear = () =>{
+  const createAnimationOnAppear = () => {
     const planeObserver = new IntersectionObserver(onPlaneAppearInView, {
       threshold: [0.5],
     });
@@ -36,17 +34,17 @@ const Plan: React.FC = () => {
     });
     const steps = document.querySelectorAll(".plan__step");
     const planes = document.querySelectorAll(".plan__steps-plane");
-    
-    for (let step of steps) {
+
+    for (const step of steps) {
       stepsObserver.observe(step);
     }
-    for (let plane of planes){
-        planeObserver.observe(plane);
+    for (const plane of planes) {
+      planeObserver.observe(plane);
     }
-  }
+  };
 
   useEffect(() => {
-    createAnimationOnAppear()    
+    createAnimationOnAppear();
   }, []);
 
   const planSteps = [

@@ -1,282 +1,282 @@
 /* @import './vars.scss'; */
 
 @mixin h1-font {
-    font-family: $titleFontFamily;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 67px;
-    color: $mainBlack;
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 67px;
+  color: var(--primary-black-color);
 }
 
 @mixin h1-diploma-font {
-    font-family: $diplomaFontFamily;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 73px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $mainGreen;
+  font-family: var(--diploma-font-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-green-color);
 }
 
 @mixin h2-font {
-    font-family: $titleFontFamily;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    letter-spacing: 0.04em;
-    color: $mainBlack;
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  color: var(--primary-black-color);
 }
 
 @mixin h4-diploma-font {
-    font-family: $diplomaFontFamily;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: $mainBlack;
+  font-family: var(--diploma-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-black-color);
 }
 
 @mixin logo-font {
-    font-family: $commonFontFamily;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
-    color: $mainBlack;
+  font-family: var(--common-font-family);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--primary-black-color);
 }
 
 @mixin subtext {
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 0.08em;
-    color: $lightGray;
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.08em;
+  color: var(--primary-light-gray-color);
 }
 
-@mixin checkbox-font{
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    color: $lightGray;
+@mixin checkbox-font {
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: var(--primary-light-gray-color);
 }
 
 @mixin diploma-name-font {
-    font-family: $diplomaFontFamily;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $mainBlack;
+  font-family: var(--diploma-font-family);
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
 }
 @mixin diploma-place-font {
-    font-family: $diplomaFontFamily;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: $mainGreen;
+  font-family: var(--diploma-font-family);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-green-color);
 }
 @mixin diploma-text-font {
-    font-family: $diplomaFontFamily;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $mainBlack;
-    font-feature-settings: 'tnum' on, 'lnum' on;
-    opacity: 0.6;
+  font-family: var(--diploma-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+  font-feature-settings: "tnum" on, "lnum" on;
+  opacity: 0.6;
 }
 
 @mixin cover-text-font {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
 }
 
 @mixin plan-step-font {
-    font-family: $commonFontFamily;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
-    color: $mainWhite;
+  font-family: var(--common-font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--primary-white-color);
 }
 
 @mixin plan-link-font {
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    color: $mainGreen;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: var(--primary-green-color);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 @mixin wavy-underline {
-    text-decoration: underline wavy;
-    text-decoration-color: $mainOrange;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 3px;
-    text-decoration-skip-ink: none;
+  text-decoration: underline wavy;
+  text-decoration-color: var(--primary-orange-color);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
 }
 
 @mixin green-emphasis {
-    color: $mainGreen;
+  color: var(--primary-green-color);
 }
 
 @mixin paragraph-large {
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    letter-spacing: 0.05em;
-    color: $mainGray;
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: var(--primary-gray-color);
 }
 
 @mixin paragraph-medium {
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    color: $mainGray;
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: var(--primary-gray-color);
 }
 
 @mixin paragraph-small {
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0.05em;
-    color: $mainGray;
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: var(--primary-gray-color);
 }
 
 @mixin nav-menu-text {
-    font-family: $titleFontFamily;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: 0.03em;
-    color: $mainBlack;
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: var(--primary-black-color);
 }
 @mixin banner-text {
-    @include nav-menu-text;
-    color: $mainWhite;
+  @include nav-menu-text;
+  color: var(--primary-white-color);
 }
-@mixin banner-old-price{
-    font-family: $commonFontFamily;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
-    color: $mainBlack;
+@mixin banner-old-price {
+  font-family: var(--common-font-family);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--primary-black-color);
 }
-@mixin banner-new-price{
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 114px;
-    color: $mainBlack;
+@mixin banner-new-price {
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 114px;
+  color: var(--primary-black-color);
 }
 
 @mixin footer-text {
-    @include nav-menu-text;
-    font-weight: 400;
+  @include nav-menu-text;
+  font-weight: 400;
 }
 
 @mixin timer-pad-time {
-    font-family: $commonFontFamily;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: 0.04em;
-    color: $mainOrange;
+  font-family: var(--common-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  color: var(--primary-orange-color);
 }
 
 @mixin timer-colon {
-    font-family: $titleFontFamily;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 33px;
-    margin-top: 13px;
-    color: $mainBlack;
+  font-family: var(--title-font-family);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 13px;
+  color: var(--primary-black-color);
 }
 
 @mixin timer-text {
-    font-family: $titleFontFamily;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.04em;
-    color: $mainBlack;
-    text-align: center;
+  font-family: var(--title-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: var(--primary-black-color);
+  text-align: center;
 }
 
 @mixin solid-button {
-    width: 100%;
-    max-width: 360px;
-    padding: 18px 75px;
-    font-family: $commonFontFamily;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    background-color: $mainGreen;
-    color: $mainWhite;
-    letter-spacing: 0.04em;
-    box-shadow: 0px 15px 30px 0px rgba(25, 218, 140, 0.25);
-    border-radius: 15px;
+  width: 100%;
+  max-width: 360px;
+  padding: 18px 75px;
+  font-family: var(--common-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: var(--primary-green-color);
+  color: var(--primary-white-color);
+  letter-spacing: 0.04em;
+  box-shadow: 0px 15px 30px 0px rgba(25, 218, 140, 0.25);
+  border-radius: 15px;
 }
 
-@mixin solid-button--red{
-    box-shadow: 0px 15px 30px 0px rgba(218, 71, 25, 0.25);
-    background-color: $mainRed
+@mixin solid-button--red {
+  box-shadow: 0px 15px 30px 0px rgba(218, 71, 25, 0.25);
+  background-color: var(--primary-red-color);
 }
 
 @mixin transparent-button {
-    padding: 10px 59px;
-    font-family: $commonFontFamily;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    background-color: $mainOrange;
-    color: $mainWhite;
-    letter-spacing: 0.04em;
-    border-radius: 15px;
-    border: 1px solid $mainOrange;
+  padding: 10px 59px;
+  font-family: var(--common-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: var(--primary-orange-color);
+  color: var(--primary-white-color);
+  letter-spacing: 0.04em;
+  border-radius: 15px;
+  border: 1px solid var(--primary-orange-color);
 }
 
 @mixin checkbox {
-    transition: all 0.3s;
-    appearance: none;
+  transition: all 0.3s;
+  appearance: none;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 3px;
+  left: 2px;
+
+  &::before {
     position: absolute;
+    top: -2px;
+    left: -2px;
+
+    content: "";
     width: 19px;
     height: 19px;
-    top: 3px;
-    left: 2px;
+    border: 1.5px solid var(--primary-green-color);
+    background-color: var(--primary-white-color);
+    border-radius: 7px;
+  }
 
-    &::before {
-        position: absolute;
-        top: -2px;
-        left: -2px;
-
-        content: '';
-        width: 19px;
-        height: 19px;
-        border: 1.5px solid $mainGreen;
-        background-color: $mainWhite;
-        border-radius: 7px;
-    }
-
-    &:checked::before {
-        background-color: $mainGreen;
-    }
+  &:checked::before {
+    background-color: var(--primary-green-color);
+  }
 }

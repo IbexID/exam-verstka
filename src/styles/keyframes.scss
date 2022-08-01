@@ -9,16 +9,16 @@
 }
 @keyframes transparent-button-onload {
   25% {
-    background-color: $mainOrange;
-    color: $mainWhite;
+    background-color: var(--primary-orange-color);
+    color: var(--primary-white-color);
 
-    border: 1px solid $mainOrange;
+    border: 1px solid var(--primary-orange-color);
   }
   100% {
-    background-color: $mainWhite;
-    color: $mainBlack;
+    background-color: var(--primary-white-color);
+    color: var(--primary-black-color);
 
-    border: 1px solid $mainBlack;
+    border: 1px solid var(--primary-black-color);
   }
 }
 

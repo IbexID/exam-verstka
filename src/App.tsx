@@ -1,32 +1,16 @@
-import Cover from "./components/Cover";
-import Footer from "./components/Footer";
-import Subscription from "./components/Subscription";
-import About from "./components/About";
-import ParticipationGoal from "./components/ParticipationGoal";
-import Plan from "./components/Plan";
-import Diploma from "./components/Diploma";
-import Register from "./components/Register";
-import Questions from "./components/Questions";
-import './styles/index.scss';
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Index from "./pages/Index";
+import IndexAlt from "./pages/IndexAlt";
 
 function App() {
   return (
-    <div className="App">
-      <main>
-        <Cover />
-        <About />
-        <ParticipationGoal />
-        <Plan />
-        <Diploma />
-        <Register />
-        <Questions />
-        <Subscription />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    <BrowserRouter basename="/exam-verstka">
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/alt" element={<IndexAlt />} />
+        <Route path="*" element={<Index />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

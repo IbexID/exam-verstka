@@ -1,5 +1,6 @@
 @import "./fonts.scss";
-@import "./vars.module.scss";
+@import "./vars.scss";
+@import "./vars-alt.scss";
 @import "./mixins.scss";
 @import "./keyframes.scss";
 
@@ -71,7 +72,7 @@ img {
   &__tick {
     cursor: pointer;
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: 4px;
     background-image: url("../images/icons/checkbox-tick.svg");
     width: 15px;
@@ -81,12 +82,12 @@ img {
 
   &__link--green {
     text-decoration: underline;
-    color: $mainGreen;
+    color: var(--primary-green-color);
   }
 
   &__link--white {
     text-decoration: underline;
-    color: $mainWhite;
+    color: var(--primary-white-color);
   }
 }
 
@@ -95,17 +96,17 @@ img {
   height: 60px;
   width: 540px;
   border-radius: 15px;
-  border: 1px solid $lightGray;
+  border: 1px solid var(--primary-light-gray-color);
   padding: 18px 0 18px 20px;
   @include paragraph-medium;
   transition: color, border-color 0.1s ease-out;
 
   &:hover {
-    border-color: $mainGray;
+    border-color: var(--primary-gray-color);
   }
 
   &:hover::placeholder {
-    color: $mainGray;
+    color: var(--primary-gray-color);
   }
 }
 
@@ -156,7 +157,7 @@ img {
     border-radius: 16px;
     width: 445px;
     height: 170px;
-    background-color: $mainWhite;
+    background-color: var(--primary-white-color);
     box-shadow: 0px 5px 30px 0px rgba(215, 211, 225, 0.5);
     padding: 0px 35px 25px;
 
@@ -199,10 +200,9 @@ img {
       "
       M0.5 7.5L51 1H85L131 7.5L169 13.5L201.5 21.5L234.5 32.5L297.5 57.5L357.5 86.5L505.5 169L593 220L651.5 252.5L710.5 283.5L770.5 313.5L832.5 342L868.5 357.5L924.5 379.5L965.5 394L1008 408.5L1054.5 421.5L1106 434.5L1160.5 443.5L1199.5 448.5L1235 451H1276.5L1301.5 450L1335.5 446L1370 440.5L1405 433L1429.5 426L1545 394L1606 370L1669 342
       "
-      
     );
   }
-  &__plane-appear{
+  &__plane-appear {
     animation: plan-flying-plane 2s linear 1 forwards;
   }
 
@@ -219,7 +219,6 @@ img {
     left: 69px;
     z-index: 1;
   }
-  
 
   &__step {
     z-index: 2;
@@ -231,13 +230,13 @@ img {
     gap: 40px;
     max-width: 350px;
   }
-  &__step1-appear{
+  &__step1-appear {
     animation: appearing-plan 1s linear 0.25s 1 forwards;
   }
-  &__step2-appear{
+  &__step2-appear {
     animation: appearing-plan 1s linear 0.75s 1 forwards;
   }
-  &__step3-appear{
+  &__step3-appear {
     animation: appearing-plan 1s linear 1.25s 1 forwards;
   }
 
@@ -245,14 +244,12 @@ img {
     margin: 123px 0 136px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    //animation: appearing-plan 1s linear 0.75s 1 forwards;
   }
 
   &__step:nth-child(3) {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
     max-width: 388px;
-    //animation: appearing-plan 1s linear 1.25s 1 forwards;
   }
 
   &__step-circle {
@@ -262,7 +259,7 @@ img {
     height: 80px;
     min-width: 80px;
     border-radius: 50%;
-    background-color: $mainOrange;
+    background-color: var(--primary-orange-color);
   }
 
   &__step-count {
@@ -313,7 +310,7 @@ img {
     align-items: center;
   }
   &__card-underlay {
-    background: $mainWhite;
+    background: var(--primary-white-color);
     width: 794px;
     height: 551px;
     padding: 74px 147px 143px;
@@ -332,7 +329,7 @@ img {
   &__card-name {
     @include diploma-name-font;
     width: 100%;
-    border-bottom: 2px solid $mainGreen;
+    border-bottom: 2px solid var(--primary-green-color);
     border-radius: 1px;
   }
   &__card-place {
@@ -396,7 +393,7 @@ img {
     width: 70px;
     height: 60px;
     border-radius: 16px;
-    background-color: $mainWhite;
+    background-color: var(--primary-white-color);
     box-shadow: 0px 5px 30px 0px rgba(215, 211, 225, 0.5);
     @include timer-pad-time;
   }
@@ -419,7 +416,7 @@ img {
   display: flex;
   align-items: center;
   gap: 5px;
-  &__img{
+  &__img {
     margin-bottom: 5px;
   }
   &__text {
@@ -427,7 +424,7 @@ img {
   }
 
   &__text-emphasis {
-    color: $mainOrange;
+    color: var(--primary-orange-color);
     font-weight: 400;
   }
 }
@@ -586,7 +583,7 @@ img {
   &__clock {
     top: 224px;
     left: 136px;
-    transform:scale(0.7);
+    transform: scale(0.7);
     animation: clock 12s linear 0.5s infinite,
       space-cover-onload 2s linear 0.5s 1 forwards;
   }
@@ -610,7 +607,7 @@ img {
     left: 482px;
     transform: rotate(15deg);
     animation: lightbulb 12s ease 0.5s infinite forwards,
-     space-cover-onload 2s linear 0.5s 1 forwards;
+      space-cover-onload 2s linear 0.5s 1 forwards;
   }
 
   &__elephant {
@@ -706,8 +703,8 @@ img {
 }
 
 .social-icon {
-  background-color: $mainWhite;
-  border: 1px solid $mainWhite;
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--primary-white-color);
   border-radius: 10px;
 }
 
@@ -718,14 +715,14 @@ img {
 
   &__text-emphasis {
     font-weight: 700;
-    color: $mainGreen;
+    color: var(--primary-green-color);
   }
 }
 
 .expand-button {
   height: 48px;
   width: 48px;
-  background-color: $mainOrange;
+  background-color: var(--primary-orange-color);
   border-radius: 50%;
   position: relative;
   &::after,
@@ -734,7 +731,7 @@ img {
     content: "";
     width: 2px;
     height: 21px;
-    background-color: $mainWhite;
+    background-color: var(--primary-white-color);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -765,7 +762,7 @@ img {
     gap: 20px;
     margin-bottom: 52px;
   }
-  &__checkbox-wrapper{
+  &__checkbox-wrapper {
     margin-left: 2px;
     margin-top: -2px;
   }
@@ -783,11 +780,11 @@ img {
     bottom: -53px;
     position: absolute;
   }
-  &__form-plane-1{
+  &__form-plane-1 {
     left: 166px;
     top: -40px;
   }
-  &__form-plane-2{
+  &__form-plane-2 {
     z-index: -1;
     left: 209px;
     bottom: -50px;
@@ -796,8 +793,8 @@ img {
     width: 490px;
     height: 476px;
     border-radius: 40px;
-    border: 3px solid $mainGreen;
-    box-shadow: 0px 5px 15px $paleGreenShadow;
+    border: 3px solid var(--primary-green-color);
+    box-shadow: 0px 5px 15px var(--primary-pale-green-color);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -843,29 +840,31 @@ img {
     align-items: center;
     width: 100%;
     padding: 19px 56px 20px 58px;
-    border-radius: 0px 0px 40px 40px;;
-    background: $mainGreen;
+    border-radius: 0px 0px 40px 40px;
+    background: var(--primary-green-color);
     @include banner-text;
   }
   &__banner-socials {
     display: flex;
     gap: 18px;
   }
-  &__flying-plane{
+  &__flying-plane {
     position: absolute;
     transform: rotateY(180deg) rotateZ(180deg);
     right: 230px;
     bottom: 210px;
-    offset-path: path("M455 0.5C359.8 151.462 289.481 193.566 136.5 199.5C100.5 199.5 96 197 1 188.5");
+    offset-path: path(
+      "M455 0.5C359.8 151.462 289.481 193.566 136.5 199.5C100.5 199.5 96 197 1 188.5"
+    );
   }
-  &__plane-appear{
-    animation: register-flying-plane 2s ease-out .8s 1 forwards;
+  &__plane-appear {
+    animation: register-flying-plane 2s ease-out 0.8s 1 forwards;
   }
-  &__move-plane-1{
-    animation: move-plane-one .25s ease 2.5s 1 forwards;
+  &__move-plane-1 {
+    animation: move-plane-one 0.25s ease 2.5s 1 forwards;
   }
-  &__move-plane-2{
-    animation: move-plane-two .25s ease 2.5s 1 forwards;
+  &__move-plane-2 {
+    animation: move-plane-two 0.25s ease 2.5s 1 forwards;
   }
 }
 
@@ -880,11 +879,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid $mainBlack;
+    border-bottom: 1px solid var(--primary-black-color);
   }
   &__item:first-of-type {
     padding: 31px 0 30px;
-    border-top: 1px solid $mainBlack;
+    border-top: 1px solid var(--primary-black-color);
   }
 }
 
@@ -908,11 +907,11 @@ img {
   }
 
   &__title {
-    color: $mainWhite;
+    color: var(--primary-white-color);
   }
 
   &__text {
-    color: $mainWhite;
+    color: var(--primary-white-color);
     margin-bottom: 20px;
     text-align: center;
   }
@@ -923,7 +922,7 @@ img {
     display: flex;
     gap: 30px;
   }
-  &__form{
+  &__form {
     margin-left: 108px;
   }
 }
@@ -961,7 +960,7 @@ img {
   &__up-button {
     height: 56px;
     width: 56px;
-    background-color: $mainOrange;
+    background-color: var(--primary-orange-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
