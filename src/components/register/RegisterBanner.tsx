@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialIcon from './ui/SocialIcon'
+import SocialIcon from '../ui/SocialIcon'
 
 interface IRegisterBannerProps {
   oldPrice: number

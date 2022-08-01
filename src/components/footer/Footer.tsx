@@ -1,6 +1,6 @@
 import React from 'react'
 import FooterNavLink from './FooterNavLink'
-import SocialIcon from './ui/SocialIcon'
+import SocialIcon from '../ui/SocialIcon'
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             scrollToTop()
           }}
         >
-          <img src={require('../images/icons/footer-up.svg').default} alt='' />
+          <img src={require('../../images/icons/footer-up.svg').default} alt='' />
         </button>
       </div>
     </footer>

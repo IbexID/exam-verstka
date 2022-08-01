@@ -41,7 +41,11 @@ const Register: React.FC = () => {
         <h2 className='register__title'>Зарегистрируйтесь, чтобы участвовать</h2>
         <RegisterForm />
       </div>
-      <img className='register__flying-plane' src={require('../images/flying-plane.png')} alt='' />
+      <img
+        className='register__flying-plane'
+        src={require('../../images/flying-plane.png')}
+        alt=''
+      />
     </article>
   )
 }

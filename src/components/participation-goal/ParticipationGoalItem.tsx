@@ -8,7 +8,7 @@ interface IParticipationGoalItemProps {
 const ParticipationGoalItem: React.FC<IParticipationGoalItemProps> = ({ text, id }) => {
   return (
     <div className='goal__item'>
-      <img src={require(`../images/contest-item-${id}.png`)} alt='' />
+      <img src={require(`../../images/contest-item-${id}.png`)} alt='' />
       <p className='goal__item-text paragraph--medium'>
         {text}
         {id === 6 ? (

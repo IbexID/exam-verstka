@@ -1,7 +1,7 @@
 import React from 'react'
-import Checkbox from './ui/Checkbox'
-import RegisterInput from './ui/RegisterInput'
-import SolidButton from './ui/SolidButton'
+import Checkbox from '../ui/Checkbox'
+import RegisterInput from '../ui/RegisterInput'
+import SolidButton from '../ui/SolidButton'
 
 const RegisterForm: React.FC = () => {
   const inputs = [
@@ -59,12 +59,12 @@ const RegisterForm: React.FC = () => {
         <div className='register__form-planes'>
           <img
             className='register__form-plane register__form-plane-1'
-            src={require('../images/register-plane-1.png')}
+            src={require('../../images/register-plane-1.png')}
             alt='plane'
           />
           <img
             className='register__form-plane register__form-plane-2'
-            src={require('../images/register-plane-2.png')}
+            src={require('../../images/register-plane-2.png')}
             alt='plane'
           />
         </div>

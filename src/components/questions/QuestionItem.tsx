@@ -1,5 +1,5 @@
 import React from 'react'
-import ExpandButton from './ui/ExpandButton'
+import ExpandButton from '../ui/ExpandButton'
 
 interface IQuestionItemProps {
   question: string

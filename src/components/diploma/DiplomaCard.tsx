@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './Logo'
+import Logo from '../Logo'
 
 interface IDiplomaCard {
   name: string
@@ -24,22 +24,22 @@ const DiplomaCard: React.FC<IDiplomaCard> = ({ name, category, date, place }) =>
       </div>
       <img
         className='diploma__card-image diploma__card-print'
-        src={require('../images/diploma-print.png')}
+        src={require('../../images/diploma-print.png')}
         alt='print'
       />
       <img
         className='diploma__card-image diploma__card-water'
-        src={require('../images/diploma-water-n-sand.png')}
+        src={require('../../images/diploma-water-n-sand.png')}
         alt=''
       />
       <img
         className='diploma__card-image diploma__card-tree'
-        src={require('../images/diploma-tree-n-eleph.png')}
+        src={require('../../images/diploma-tree-n-eleph.png')}
         alt=''
       />
       <img
         className='diploma__card-image diploma__card-clouds'
-        src={require('../images/diploma-clouds.png')}
+        src={require('../../images/diploma-clouds.png')}
         alt=''
       />
     </div>
