@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const ExpandButton: React.FC = () => {
-    return (
-        <button className='expand-button' />
-    );
-};
+  return <button className='expand-button' />
+}
 
-export default ExpandButton;
+export default ExpandButton
