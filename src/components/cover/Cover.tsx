@@ -71,7 +71,7 @@ const Cover: React.FC = () => {
           <SolidButton text='Участвовать' />
         </div>
         <div className='cover__bottom-timer'>
-          <Timer date={new Date('08.04.2022')} />
+          <Timer date={new Date('08.28.2022')} />
         </div>
       </div>
     </div>

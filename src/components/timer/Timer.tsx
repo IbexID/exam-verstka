@@ -13,6 +13,7 @@ const Timer: React.FC<ITimer> = ({ date }) => {
   const setTime = () => {
     setInterval(() => {
       const diff = date.getTime() - new Date().getTime()
+      
       const daysToSet =
         Math.floor(diff / 1000 / 60 / 60 / 24).toString().length > 1
           ? Math.floor(diff / 1000 / 60 / 60 / 24).toString()
