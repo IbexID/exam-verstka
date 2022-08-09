@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/exam-verstka/static/css/main.fe254a7e.css",
-    "main.js": "/exam-verstka/static/js/main.1ef6f565.js",
+    "main.js": "/exam-verstka/static/js/main.7ecb9577.js",
     "static/media/subscription-bg.png": "/exam-verstka/static/media/subscription-bg.f2d772acbbabd0eb5f2a.png",
     "static/media/participationgoal-bg.png": "/exam-verstka/static/media/participationgoal-bg.02eec00e6de86dea3b96.png",
     "static/media/plan-bg.png": "/exam-verstka/static/media/plan-bg.4eb7ef9abc2d89ac8b88.png",
@@ -16,10 +16,10 @@
     "static/media/checkbox-tick.svg": "/exam-verstka/static/media/checkbox-tick.1ef455351cd1a2c41c9c.svg",
     "static/media/footer-up.svg": "/exam-verstka/static/media/footer-up.d2be3a8efa38f89dd5770f96f12fdac1.svg",
     "main.fe254a7e.css.map": "/exam-verstka/static/css/main.fe254a7e.css.map",
-    "main.1ef6f565.js.map": "/exam-verstka/static/js/main.1ef6f565.js.map"
+    "main.7ecb9577.js.map": "/exam-verstka/static/js/main.7ecb9577.js.map"
   },
   "entrypoints": [
     "static/css/main.fe254a7e.css",
-    "static/js/main.1ef6f565.js"
+    "static/js/main.7ecb9577.js"
   ]
 }
